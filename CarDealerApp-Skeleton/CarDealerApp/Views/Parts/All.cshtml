@@ -1,0 +1,33 @@
+﻿@using CarDealer.Models.ViewModels
+@model IEnumerable<AllPartVm>
+@{
+    ViewBag.Title = "All";
+}
+
+<h2>All</h2>
+<a href="/parts/add" class="btn btn-primary">Add part</a>
+
+<table class="table table-striped">
+    <tr>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Supplier</th>
+        <th>Modify</th>
+    </tr>
+    @foreach (var part in Model)
+    {
+        <tr>
+            <td>@part.Name</td>
+            <td>@part.Price</td>
+            <td>@part.Quantity</td>
+            <td>@part.SupplierName</td>
+            <td>
+                <a href="/parts/edit/@part.Id" class="btn btn-success">Edit</a>
+                <a href="/parts/delete/@part.Id" class="btn btn-danger">Delete</a>
+            </td>
+        </tr>
+  
+    }
+</table>
+

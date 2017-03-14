@@ -1,0 +1,19 @@
+﻿@using CarDealer.Models.ViewModels
+@model EditCustomerVm
+    
+<h2>Edit Customer</h2>
+
+<form method="post">
+    <input type="number" hidden="hidden" value="@Model.Id" name="Id" />
+    <div class="form-group">
+        <label for="name">Name: </label>
+        <input type="text" value="@Model.Name" id="name" name="name" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label for="BirthDate">Birthday: </label>
+        <input type="date" value="@Model.BirthDate.ToString("yyyy-MM-dd")" id="BirthDate" name="Birthdate" class="form-control" />
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Submit" />
+    </div>
+</form>

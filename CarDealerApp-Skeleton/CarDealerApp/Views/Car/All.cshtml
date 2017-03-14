@@ -1,0 +1,29 @@
+﻿@using System.Collections
+@using CarDealer.Models.ViewModels;
+@model IEnumerable<AllCarsVm>
+@{
+    ViewBag.Title = "All";
+}
+
+<h2>Cars from @ViewBag.Make</h2>
+<table class="table table-striped">
+    <tr>
+        <th>Make</th>
+        <th>Model</th>
+        <th>Travelled distance</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @item.Make
+            </td>
+            <td>
+                @item.Model
+            </td>
+            <td>
+                @item.TravelledDistance
+            </td>
+        </tr>
+    }
+</table>

@@ -1,0 +1,5 @@
+C:\Users\Jordan\Desktop\CarDealerApp-Skeleton\CarDealer.Models\bin\Debug\CarDealer.Models.dll
+C:\Users\Jordan\Desktop\CarDealerApp-Skeleton\CarDealer.Models\bin\Debug\CarDealer.Models.pdb
+C:\Users\Jordan\Desktop\CarDealerApp-Skeleton\CarDealer.Models\obj\Debug\CarDealer.Models.dll
+C:\Users\Jordan\Desktop\CarDealerApp-Skeleton\CarDealer.Models\obj\Debug\CarDealer.Models.pdb
+C:\Users\Jordan\Desktop\CarDealerApp-Skeleton\CarDealer.Models\obj\Debug\CarDealer.Models.csprojResolveAssemblyReference.cache

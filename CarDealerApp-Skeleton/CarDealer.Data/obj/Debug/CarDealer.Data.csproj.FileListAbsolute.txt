@@ -1,0 +1,12 @@
+C:\Users\Jordan\Desktop\CarDealerApp-Skeleton\CarDealer.Data\bin\Debug\CarDealer.Data.dll.config
+C:\Users\Jordan\Desktop\CarDealerApp-Skeleton\CarDealer.Data\bin\Debug\CarDealer.Data.dll
+C:\Users\Jordan\Desktop\CarDealerApp-Skeleton\CarDealer.Data\bin\Debug\CarDealer.Data.pdb
+C:\Users\Jordan\Desktop\CarDealerApp-Skeleton\CarDealer.Data\bin\Debug\CarDealer.Models.dll
+C:\Users\Jordan\Desktop\CarDealerApp-Skeleton\CarDealer.Data\bin\Debug\EntityFramework.dll
+C:\Users\Jordan\Desktop\CarDealerApp-Skeleton\CarDealer.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Jordan\Desktop\CarDealerApp-Skeleton\CarDealer.Data\bin\Debug\CarDealer.Models.pdb
+C:\Users\Jordan\Desktop\CarDealerApp-Skeleton\CarDealer.Data\bin\Debug\EntityFramework.xml
+C:\Users\Jordan\Desktop\CarDealerApp-Skeleton\CarDealer.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Jordan\Desktop\CarDealerApp-Skeleton\CarDealer.Data\obj\Debug\CarDealer.Data.csprojResolveAssemblyReference.cache
+C:\Users\Jordan\Desktop\CarDealerApp-Skeleton\CarDealer.Data\obj\Debug\CarDealer.Data.dll
+C:\Users\Jordan\Desktop\CarDealerApp-Skeleton\CarDealer.Data\obj\Debug\CarDealer.Data.pdb
