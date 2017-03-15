@@ -2,6 +2,7 @@
 using System.Linq;
 using AutoMapper;
 using CarDealer.Models;
+using CarDealer.Models.BindingModels;
 using CarDealer.Models.ViewModels;
 
 namespace CarDealer.Services
@@ -14,12 +15,12 @@ namespace CarDealer.Services
             if (make == null)
             {
                 cars = this.Context.Cars
-                .OrderBy(car => car.Make).ThenByDescending(car => car.TravelledDistance);
+                    .OrderBy(car => car.Make).ThenByDescending(car => car.TravelledDistance);
             }
             else
             {
                 cars = this.Context.Cars.Where(car => car.Make.Contains(make))
-                .OrderBy(car => car.Make).ThenByDescending(car => car.TravelledDistance);
+                    .OrderBy(car => car.Make).ThenByDescending(car => car.TravelledDistance);
             }
             IEnumerable<AllCarsVm> viewModel = Mapper.Instance.Map<IEnumerable<Car>, IEnumerable<AllCarsVm>>(cars);
 
@@ -40,6 +41,22 @@ namespace CarDealer.Services
                 Car = wantedCarVm,
                 Parts = carPartsVms
             };
+        }
+
+        public void AddCar(AddCarBm bind)
+        {
+            Car model = Mapper.Map<AddCarBm, Car>(bind);
+            int[] partIds = bind.Parts.Split(' ').Select(int.Parse).ToArray();
+            foreach (var partId in partIds)
+            {
+                Part part = this.Context.Parts.Find(partId);
+                if (part != null)
+                {
+                    model.Parts.Add(part);
+                }
+                this.Context.Cars.Add(model);
+                this.Context.SaveChanges();
+            }
         }
     }
 }

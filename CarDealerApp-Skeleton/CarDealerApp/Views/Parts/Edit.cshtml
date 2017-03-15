@@ -1,0 +1,23 @@
+﻿@using CarDealer.Models.ViewModels
+@model EditPartVm
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+<h3>@Model.Name</h3>
+<form method="post">
+    <input type="number" hidden="hidden" name="Id" value="@Model.Id" />
+    <div class="form-group">
+        <label for="price">Price: </label>
+        <input type="number" value="@Model.Price" class="form-control" id="price" name="price" step="0.1" />
+    </div>
+    <div class="form-group">
+        <label for="quantity">Quantity: </label>
+        <input type="number" value="@Model.Quantity" class="form-control" id="quantity" name="quantity"/>
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Submit" />
+    </div>
+</form>

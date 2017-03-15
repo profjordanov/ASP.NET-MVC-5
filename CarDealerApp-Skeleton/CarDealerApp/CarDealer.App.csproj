@@ -190,6 +190,9 @@
     <Content Include="Views\Customers\Edit.cshtml" />
     <Content Include="Views\Parts\Add.cshtml" />
     <Content Include="Views\Parts\All.cshtml" />
+    <Content Include="Views\Parts\Delete.cshtml" />
+    <Content Include="Views\Parts\Edit.cshtml" />
+    <Content Include="Views\Car\Add.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

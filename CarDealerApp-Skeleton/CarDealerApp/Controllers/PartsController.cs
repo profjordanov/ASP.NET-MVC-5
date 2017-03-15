@@ -48,5 +48,47 @@ namespace CarDealerApp.Controllers
             return this.View(vms);
         }
 
+        [HttpGet]
+        [Route("delete/{id}")]
+        public ActionResult Delete(int id)
+        {
+            DeletePartVm vm = this.service.GetDeleteVm(id);
+            return this.View(vm);
+        }
+
+        [HttpPost]
+        [Route("delete/{id}")]
+        public ActionResult Delete([Bind(Include = "PartId")] DeletePartBm bind)
+        {
+            if (this.ModelState.IsValid)
+            {
+                this.service.DeletePart(bind);
+                return this.RedirectToAction("All");
+            }
+            DeletePartVm vm = this.service.GetDeleteVm(bind.PartId);
+            return this.View(vm);
+        }
+
+        [HttpGet]
+        [Route("edit/{id}")]
+        public ActionResult Edit(int id)
+        {
+            EditPartVm vm = this.service.GetEditVm(id);
+            return this.View(vm);
+        }
+
+        [HttpPost]
+        [Route("edit/{id}")]
+        public ActionResult Edit([Bind(Include = "Id, Price, Quantity")] EditPartBm bind)
+        {
+            if (this.ModelState.IsValid)
+            {
+                this.service.EditPart(bind);
+                return this.RedirectToAction("All");
+            }
+            EditPartVm vm = this.service.GetEditVm(bind.Id);
+            return this.View(vm);
+        }
+
     }
 }
