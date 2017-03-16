@@ -71,6 +71,11 @@ namespace CarDealerApp.Controllers
         {
             if (this.ModelState.IsValid)
             {
+               // if (!bind.Name.StartsWith("admin"))
+               // {
+               //     this.ModelState.AddModelError("Name", errorMessage:"The name should stat with admin! PLS!");
+               //     return this.View(this.service.GetEditCustomerVm(bind.Id));
+               // }
                 this.service.EditCustomer(bind);
                 return this.RedirectToAction("All", new {order = "ascending"});
             }

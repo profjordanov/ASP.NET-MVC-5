@@ -17,12 +17,12 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("Cars shop", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="/customers/all/ascending">Customers</a>
+                       @Html.ActionLink("Customers", "All", "Customers", new {order = "ascending" }, null)
                     </li>
                     <li class="dropdown">
                         <a href="dropdown-toggle" type="button" data-toggle="dropdown">
@@ -30,11 +30,11 @@
                             <span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu">
-                            <li> <a href="/sales">All</a> </li>
-                            <li> <a href="/sales/discounted">Discounted</a></li>
+                            <li> @Html.ActionLink("All", "All", "Sales") </li>
+                            <li> @Html.ActionLink("Discounted", "Discounted", "Sales", new { percent = 5}, null)</li>
                         </ul>
                     </li>
-                    <li><a href="/cars">Cars</a></li>
+                    <li>@Html.ActionLink("Cars", "All", "Car")</li>
                 </ul>
             </div>
         </div>

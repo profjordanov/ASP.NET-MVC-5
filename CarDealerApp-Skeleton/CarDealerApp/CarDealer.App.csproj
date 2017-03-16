@@ -138,6 +138,7 @@
     <Compile Include="Controllers\PartsController.cs" />
     <Compile Include="Controllers\SalesController.cs" />
     <Compile Include="Controllers\SuppliersController.cs" />
+    <Compile Include="Extensions\HtmlhelperExtensions.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

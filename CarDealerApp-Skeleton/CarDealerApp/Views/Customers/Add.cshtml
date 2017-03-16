@@ -1,13 +1,19 @@
 ﻿<h1>Add Customer</h1>
+@Html.ActionLink("All customers", "All", new { order = "descending" })
 
-<form method="post">
-    <label for="name">Name: </label>
-    <input type="text" value="" id="name" name="name"/>
-    <br />
+@using (Html.BeginForm())
+{
+    <div class="form-group">
+        @Html.Label("Name: ")
+        <input type="text" value="" id="name" name="name" />
+    </div>
+    <div class="form-group">
+        <label for="BirthDate">Birthday: </label>
+        <input type="date" value="" id="BirthDate" name="BirthDate" />
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Submit" />
+    </div>
+}
     
-    <label for="BirthDate">Birthday: </label>
-    <input type="date" value="" id="BirthDate" name="BirthDate" />
-    <br />
-    
-    <input type="submit" value="Submit" />
-</form>
+
