@@ -61,6 +61,7 @@
     <Compile Include="SalesService.cs" />
     <Compile Include="Service.cs" />
     <Compile Include="SuppliersService.cs" />
+    <Compile Include="UsersService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

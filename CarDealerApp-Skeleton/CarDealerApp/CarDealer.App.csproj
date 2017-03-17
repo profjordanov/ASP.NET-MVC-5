@@ -138,11 +138,13 @@
     <Compile Include="Controllers\PartsController.cs" />
     <Compile Include="Controllers\SalesController.cs" />
     <Compile Include="Controllers\SuppliersController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Extensions\HtmlhelperExtensions.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Security\AuthenticationManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
@@ -194,6 +196,11 @@
     <Content Include="Views\Parts\Delete.cshtml" />
     <Content Include="Views\Parts\Edit.cshtml" />
     <Content Include="Views\Car\Add.cshtml" />
+    <Content Include="Views\User\Register.cshtml" />
+    <Content Include="Views\User\Login.cshtml" />
+    <Content Include="Views\Sales\AddConfirmation.cshtml" />
+    <Content Include="Views\Sales\Add.cshtml" />
+    <Content Include="Views\Suppliers\Add.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

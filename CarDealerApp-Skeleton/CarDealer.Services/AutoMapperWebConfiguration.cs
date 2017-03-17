@@ -37,8 +37,14 @@ namespace CarDealer.Services
                 expression.CreateMap<Part, EditPartVm>();
                 expression.CreateMap<AddCarBm, Car>()
                     .ForMember(car => car.Parts, configurationExpression => configurationExpression.Ignore());
-
-
+                expression.CreateMap<Part, EditPartVm>();
+                expression.CreateMap<RegisterUserBm, User>();
+                expression.CreateMap<Car, AddSaleCarVm>();
+                expression.CreateMap<Customer, AddSaleCustomerVm>();
+                expression.CreateMap<Supplier, SupplierAllVm>();
+                expression.CreateMap<AddSupplierBm, Supplier>();
+               //expression.CreateMap<Supplier, EditSupplierVm>();
+               //expression.CreateMap<Supplier, DeleteSuplierVm>();
             });
         }
     }

@@ -17,12 +17,12 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Cars shop", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("Cars Dealer", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>
-                       @Html.ActionLink("Customers", "All", "Customers", new {order = "ascending" }, null)
+                        @Html.ActionLink("Customers", "All", "Customers", new { order = "ascending" }, null)
                     </li>
                     <li class="dropdown">
                         <a href="dropdown-toggle" type="button" data-toggle="dropdown">
@@ -31,10 +31,24 @@
                         </a>
                         <ul class="dropdown-menu">
                             <li> @Html.ActionLink("All", "All", "Sales") </li>
-                            <li> @Html.ActionLink("Discounted", "Discounted", "Sales", new { percent = 5}, null)</li>
+                            <li> @Html.ActionLink("Discounted", "Discounted", "Sales", new { percent = 5 }, null)</li>
                         </ul>
                     </li>
                     <li>@Html.ActionLink("Cars", "All", "Car")</li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/users/register/">Register</a>
+                    </li>
+                    <li>
+                        <a href="/users/login">Login</a>
+                    </li>
+                    <li>
+                        <form method="post" action="/users/logout/">
+                            <input type="submit" value="Logout" class="form-control" />
+                        </form>
+                    </li>
                 </ul>
             </div>
         </div>
