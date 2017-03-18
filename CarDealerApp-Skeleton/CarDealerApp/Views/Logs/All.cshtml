@@ -1,0 +1,54 @@
+﻿@model CarDealer.Models.ViewModels.AllLogsPageVm
+@{
+    ViewBag.Title = "All";
+    var url = $"/logs/all";
+    if (Model.WantedUsername != null)
+    {
+        url += $"/{Model.WantedUsername}";
+    }
+}
+
+<br />
+<form method="get">
+    <div class="form-group">
+        <input type="text" value="@Model.WantedUsername" class="form-control" placeholder="Username..." />
+        <br />
+        <input type="submit" value="Search Logs" class="btn btn-lg btn-primary" />
+        <a href="/logs/deleteall" class="btn btn-lg btn-warning">Clear All Logs</a>
+    </div>
+</form>
+
+<table class="table table-striped">
+    <tr>
+        <td>User</td>
+        <td>Operation</td>
+        <td>Modified Table</td>
+        <td>Time</td>
+    </tr>
+    @foreach (var log in Model.Logs)
+    {
+        <tr>
+            <td>@log.Username</td>
+            <td>@log.Operation.ToString()</td>
+            <td>@log.ModifiedTable</td>
+            <td>@log.ModifiedAt</td>
+        </tr>
+    }
+</table>
+
+<p>
+    Page @Model.CurrentPage of @Model.TotalNumberOfPages
+    @for (int i = 1; i <= Model.TotalNumberOfPages; i++)
+    {
+        var currentUrl = url + $"?page={i}";
+        if (Model.CurrentPage == i)
+        {
+            <a href = "@currentUrl" class="btn btn-sm btn-primary" >@i</a>
+        }
+        else
+        {
+            <a href = "@currentUrl" class="btn btn-sm">@i</a>
+        }
+    }
+</p>
+

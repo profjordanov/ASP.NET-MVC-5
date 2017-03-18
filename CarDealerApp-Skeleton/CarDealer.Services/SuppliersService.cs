@@ -12,24 +12,11 @@ namespace CarDealer.Services
     {
         public IEnumerable<SupplierVm> GetAllSuppliersByType(string type)
         {
-            IEnumerable<Supplier> suppliersWanted;
-            if (type.ToLower() == "local")
-            {
-                suppliersWanted = this.Context.Suppliers.Where(sup => !sup.IsImporter);
-            }
-            else if (type.ToLower() == "importers")
-            {
-                suppliersWanted = this.Context.Suppliers.Where(sup => sup.IsImporter);
+            IEnumerable<Supplier> suppliersWanter = this.GetSupplierModelsByType(type);
 
-            }
-            else
-            {
-                throw  new ArgumentException("Invalid argument!");
-            }
-
-            IEnumerable<SupplierVm> viewModel =
-                Mapper.Map<IEnumerable<Supplier>, IEnumerable<SupplierVm>>(suppliersWanted);
-            return viewModel;
+            IEnumerable<SupplierVm> viewModels =
+                Mapper.Map<IEnumerable<Supplier>, IEnumerable<SupplierVm>>(suppliersWanter);
+            return viewModels;
         }
 
         public IEnumerable<SupplierAllVm> GetAllSuppliersByTypeForUsers(string type)
@@ -48,7 +35,7 @@ namespace CarDealer.Services
             {
                 suppliersWanted = this.Context.Suppliers;
             }
-            else if(type.ToLower() == "local")
+            else if (type.ToLower() == "local")
             {
                 suppliersWanted = this.Context.Suppliers.Where(sup => !sup.IsImporter);
             }
@@ -69,7 +56,54 @@ namespace CarDealer.Services
             Supplier supplier = Mapper.Map<AddSupplierBm, Supplier>(bind);
             this.Context.Suppliers.Add(supplier);
             this.Context.SaveChanges();
-            //this.AddLog
+            this.AddLog(id, OperationLog.Add, "suppliers");
+        }
+
+        public EditSupplierVm GetEditSupplierVm(int id)
+        {
+            Supplier supplier = this.Context.Suppliers.Find(id);
+            EditSupplierVm vm = Mapper.Map<Supplier, EditSupplierVm>(supplier);
+            return vm;
+        }
+
+        public void EditSupplier(EditSupplierBm bind, int id)
+        {
+            Supplier model = this.Context.Suppliers.Find(bind.Id);
+            model.IsImporter = bind.IsImporter == "on";
+            model.Name = bind.Name;
+            this.Context.SaveChanges();
+
+            this.AddLog(id, OperationLog.Edit, "suppliers");
+        }
+
+        public DeleteSuplierVm GetDeleteSupplierVm(int id)
+        {
+            Supplier supplier = this.Context.Suppliers.Find(id);
+            DeleteSuplierVm vm = Mapper.Map<Supplier, DeleteSuplierVm>(supplier);
+            return vm;
+        }
+
+        public void DeleteSupplier(DeleteSupplierBm bind, int userId)
+        {
+            Supplier supplier = this.Context.Suppliers.Find(bind.Id);
+            this.Context.Suppliers.Remove(supplier);
+            this.Context.SaveChanges();
+            this.AddLog(userId, OperationLog.Delete, "suppliers");
+        }
+
+        private void AddLog(int userId, OperationLog operation, string modifiedTable)
+        {
+            User loggedUser = this.Context.Users.Find(userId);
+            Log log = new Log()
+            {
+                User = loggedUser,
+                ModifiedAt = DateTime.Now,
+                ModifiedTableName = modifiedTable,
+                Operation = operation
+            };
+
+            this.Context.Logs.Add(log);
+            this.Context.SaveChanges();
         }
     }
 }

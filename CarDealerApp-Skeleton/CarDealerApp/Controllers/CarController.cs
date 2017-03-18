@@ -6,6 +6,7 @@ using System.Web.Mvc;
 using CarDealer.Models.BindingModels;
 using CarDealer.Models.ViewModels;
 using CarDealer.Services;
+using CarDealerApp.Security;
 
 namespace CarDealerApp.Controllers
 {
@@ -38,6 +39,11 @@ namespace CarDealerApp.Controllers
         [Route("add")]
         public ActionResult Add()
         {
+            var httpCookie = this.Request.Cookies.Get("sessionId");
+            if (httpCookie == null || !AuthenticationManager.IsAuthenticated(httpCookie.Value))
+            {
+                return this.RedirectToAction("Login", "Users");
+            }
             return this.View();
         }
 
@@ -45,6 +51,11 @@ namespace CarDealerApp.Controllers
         [Route("add")]
         public ActionResult Add([Bind(Include = "Make, Model, TravelledDistance, Parts")]AddCarBm bind)
         {
+            var httpCookie = this.Request.Cookies.Get("sessionId");
+            if (httpCookie == null || !AuthenticationManager.IsAuthenticated(httpCookie.Value))
+            {
+                return this.RedirectToAction("Login", "Users");
+            }
             if (this.ModelState.IsValid)
             {
                 this.service.AddCar(bind);

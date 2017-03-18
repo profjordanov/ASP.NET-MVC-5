@@ -1,0 +1,37 @@
+﻿@model IEnumerable<CarDealer.Models.ViewModels.SupplierAllVm>
+@{
+    ViewBag.Title = "AllSuppliersForUser";
+}
+
+<h2>All Suppliers For User</h2>
+
+<br />
+<a href="/suppliers/add" class="btn btn-lg btn-primary">New Supplier</a>
+<br />
+<br />
+
+<table class="table table-striped">
+    <tr>
+        <td>Name</td>
+        <td>Importer</td>
+        <td>Actions</td>
+    </tr>
+    @foreach (var supplier in Model)
+    {
+        <tr>
+            <td>@supplier.Name</td>
+            @if (supplier.IsImporter)
+            {
+                <td>Yes</td>
+            }
+            else
+            {
+                <td>No</td>
+            }
+            <td>
+                <a href="/suppliers/edit/@supplier.Id">Edit</a>
+                <a href="/suppliers/delete/@supplier.Id">Delete</a>
+            </td>
+        </tr>
+    }
+</table>

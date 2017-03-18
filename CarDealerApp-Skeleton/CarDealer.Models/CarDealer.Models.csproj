@@ -77,8 +77,10 @@
     <Compile Include="BindingModels\AddSaleBm.cs" />
     <Compile Include="BindingModels\AddSupplierBm.cs" />
     <Compile Include="BindingModels\DeletePartBm.cs" />
+    <Compile Include="BindingModels\DeleteSupplierBm.cs" />
     <Compile Include="BindingModels\EditCustomerBm.cs" />
     <Compile Include="BindingModels\EditPartBm.cs" />
+    <Compile Include="BindingModels\EditSupplierBm.cs" />
     <Compile Include="BindingModels\LoginUserBm.cs" />
     <Compile Include="BindingModels\RegisterUserBm.cs" />
     <Compile Include="Car.cs" />
@@ -99,11 +101,15 @@
     <Compile Include="ViewModels\AddSaleVm.cs" />
     <Compile Include="ViewModels\AllCarsVm.cs" />
     <Compile Include="ViewModels\AllCustomerVm.cs" />
+    <Compile Include="ViewModels\AllLogsPageVm.cs" />
+    <Compile Include="ViewModels\AllLogVm.cs" />
     <Compile Include="ViewModels\AllPartVm.cs" />
     <Compile Include="ViewModels\CarVm.cs" />
     <Compile Include="ViewModels\DeletePartVm.cs" />
+    <Compile Include="ViewModels\DeleteSuplierVm.cs" />
     <Compile Include="ViewModels\EditCustomerVm.cs" />
     <Compile Include="ViewModels\EditPartVm.cs" />
+    <Compile Include="ViewModels\EditSupplierVm.cs" />
     <Compile Include="ViewModels\PartVm.cs" />
     <Compile Include="ViewModels\SaleVm.cs" />
     <Compile Include="ViewModels\SupplierAllVm.cs" />

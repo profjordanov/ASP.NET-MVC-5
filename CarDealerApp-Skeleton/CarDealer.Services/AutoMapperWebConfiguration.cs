@@ -43,8 +43,8 @@ namespace CarDealer.Services
                 expression.CreateMap<Customer, AddSaleCustomerVm>();
                 expression.CreateMap<Supplier, SupplierAllVm>();
                 expression.CreateMap<AddSupplierBm, Supplier>();
-               //expression.CreateMap<Supplier, EditSupplierVm>();
-               //expression.CreateMap<Supplier, DeleteSuplierVm>();
+                expression.CreateMap<Supplier, EditSupplierVm>();
+                expression.CreateMap<Supplier, DeleteSuplierVm>();
             });
         }
     }

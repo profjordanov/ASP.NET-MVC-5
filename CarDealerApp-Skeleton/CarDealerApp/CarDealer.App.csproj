@@ -135,6 +135,7 @@
     <Compile Include="Controllers\CarController.cs" />
     <Compile Include="Controllers\CustomersController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LogsController.cs" />
     <Compile Include="Controllers\PartsController.cs" />
     <Compile Include="Controllers\SalesController.cs" />
     <Compile Include="Controllers\SuppliersController.cs" />
@@ -201,6 +202,11 @@
     <Content Include="Views\Sales\AddConfirmation.cshtml" />
     <Content Include="Views\Sales\Add.cshtml" />
     <Content Include="Views\Suppliers\Add.cshtml" />
+    <Content Include="Views\Suppliers\AllSuppliersForUser.cshtml" />
+    <Content Include="Views\Suppliers\Edit.cshtml" />
+    <Content Include="Views\Suppliers\Delete.cshtml" />
+    <Content Include="Views\Logs\All.cshtml" />
+    <Content Include="Views\Logs\DeleteAll.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
