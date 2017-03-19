@@ -14,13 +14,22 @@ namespace CarDealerApp
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
-           //routes.MapRoute(
-           //  name: "Detailed sale",
-           //  url: "sales/discounted/{percent}/",
-           //  defaults: new { controller = "Sales", action = "Discounted", percent = UrlParameter.Optional }
-           // );
+            //routes.MapRoute(
+            //  name: "Detailed sale",
+            //  url: "sales/discounted/{percent}/",
+            //  defaults: new { controller = "Sales", action = "Discounted", percent = UrlParameter.Optional }
+            // );
+
+          
 
             routes.MapMvcAttributeRoutes();
+
+            routes.MapRoute(
+                name: "Default",
+                url: "{controller}/{action}",
+                defaults: new { controller = "Home", action = "Index" }
+            );
+
 
             // routes.MapRoute(
             //     name: "All customers ordered", 
@@ -55,13 +64,13 @@ namespace CarDealerApp
             //    constraints: new { id = @"\d+" }
             //);
 
-           // routes.MapRoute(
-           //    name: "Detailed sale",
-           //    url: "sales/{id}",
-           //    defaults: new { controller = "Sales", action = "About" }
-           //);
+            // routes.MapRoute(
+            //    name: "Detailed sale",
+            //    url: "sales/{id}",
+            //    defaults: new { controller = "Sales", action = "About" }
+            //);
 
-           
+
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System.Web.Mvc;
+﻿using System.Collections;
+using System.Web.Mvc;
 
 namespace CarDealerApp.Extensions
 {
@@ -20,6 +21,33 @@ namespace CarDealerApp.Extensions
             builder.MergeAttribute("src", url);
             builder.MergeAttribute("alt", alt);
             return new MvcHtmlString(builder.ToString(TagRenderMode.SelfClosing));
+        }
+
+        public static MvcHtmlString YouTube(this HtmlHelper helper, string url, int? width, int? height)
+        {
+            TagBuilder builder = new TagBuilder("iframe");
+            builder.MergeAttribute("src", $"https://www.youtube.com/embed/{url}");
+            if (width != null)
+            {
+                builder.MergeAttribute("width", width.ToString());
+            }
+            else
+            {
+                builder.MergeAttribute("width", "560");
+            }
+            if (height != null)
+            {
+                builder.MergeAttribute("height", height.ToString());
+            }
+            else
+            {
+                builder.MergeAttribute("height", "315");
+            }
+            builder.MergeAttribute("frameborder", "0");
+            builder.MergeAttribute("allowfullscreen", null);
+            builder.AddCssClass("embed-responsive-item");
+            return new MvcHtmlString(builder.ToString(TagRenderMode.Normal));
+
         }
     }
 }

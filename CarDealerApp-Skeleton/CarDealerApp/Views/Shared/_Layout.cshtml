@@ -26,7 +26,7 @@
                     </li>
                     <li class="dropdown">
                         <a href="dropdown-toggle" type="button" data-toggle="dropdown">
-                            Sale
+                            Sales
                             <span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu">
@@ -35,19 +35,30 @@
                         </ul>
                     </li>
                     <li>@Html.ActionLink("Cars", "All", "Car")</li>
+                    <li class="dropdown">
+                        <a href="dropdown-toggle" type="button" data-toggle="dropdown">
+                            Suppliers
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li> @Html.ActionLink("Local", "All", "Suppliers") </li>
+                            <li> @Html.ActionLink("Importers", "All", "Suppliers", new { type = "importers" }, null)</li>
+                        </ul>
+                    </li>
                 </ul>
 
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="/users/register/">Register</a>
+                        @Html.ActionLink("Register", "Register", "User")
                     </li>
                     <li>
-                        <a href="/users/login">Login</a>
+                        @Html.ActionLink("Login","Login","User")
                     </li>
                     <li>
-                        <form method="post" action="/users/logout/">
-                            <input type="submit" value="Logout" class="form-control" />
-                        </form>
+                        @using (Html.BeginForm("Logout", "User", FormMethod.Post))
+                        {
+                            <input type="submit" value="Logout" class="btn btn-lg-15 btn-default" />
+                        }
                     </li>
                 </ul>
             </div>
