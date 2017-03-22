@@ -7,20 +7,20 @@
 @using (Html.BeginForm("Add", "Car", FormMethod.Post))
 {
     <div class="form-group">
-        <label for="make">Make: </label>
-        <input type="text" value="" id="make" name="make" class="form-control"/>
+        @Html.Label("Make")
+        @Html.Editor("Make", new { htmlAttributes = new {@class = "form-control"} })
     </div>
     <div class="form-group">
-        <label for="model">Model: </label>
-        <input type="text" value="" id="model" name="model" class="form-control"/>
+        @Html.Label("Model")
+        <input type="text" value="" id="model" name="model" class="form-control" />
     </div>
     <div class="form-group">
-        <label for="travelled-distance">Travelled distance: </label>
-        <input type="number" value="" id="travelled-distance" name="travelledDistance" class="form-control"/>
+        @Html.Label("Travelled distance", new {@for = "travelled-distance" })
+        @Html.Editor("travelledDistance", new { htmlAttributes = new {type = "number", id = "travelled-distance", @class = "form-control" } })
     </div>
     <div class="form-group">
-        <label for="parts">Parts: </label>
-        <input type="text" value="" id="parts" name="parts" class="form-control"/>
+        @Html.Label("Parts")
+        @Html.Editor("Parts", new { htmlAttributes = new { @class = "form-control" } })
     </div>
     <div class="form-group">
         <input type="submit" value="Add" class="btn btn-default btn-lg"/>

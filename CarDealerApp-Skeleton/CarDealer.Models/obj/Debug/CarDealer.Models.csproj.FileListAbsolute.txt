@@ -33,3 +33,4 @@ C:\Users\Jordan\Desktop\CarDealerApp-Skeleton\CarDealer.Models\bin\Debug\System.
 C:\Users\Jordan\Desktop\CarDealerApp-Skeleton\CarDealer.Models\bin\Debug\System.Web.WebPages.Deployment.xml
 C:\Users\Jordan\Desktop\CarDealerApp-Skeleton\CarDealer.Models\bin\Debug\System.Web.WebPages.Razor.xml
 C:\Users\Jordan\Desktop\CarDealerApp-Skeleton\CarDealer.Models\obj\Debug\CarDealer.Models.csprojResolveAssemblyReference.cache
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\CarDealerApp-Skeleton\CarDealer.Models\obj\Debug\CarDealer.Models.csprojResolveAssemblyReference.cache

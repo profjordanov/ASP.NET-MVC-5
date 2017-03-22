@@ -21,8 +21,19 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>
-                        @Html.ActionLink("Customers", "All", "Customers", new { order = "ascending" }, null)
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" type="button" data-toggle="dropdown">
+                            Customers
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                @Html.ActionLink("Ascending","All","Customers", new {order = "ascending" }, null)
+                            </li>
+                            <li>
+                                @Html.ActionLink("Descending","All","Customers", new {order = "descending" }, null)
+                            </li>
+                        </ul>
                     </li>
                     <li class="dropdown">
                         <a href="dropdown-toggle" type="button" data-toggle="dropdown">
@@ -41,23 +52,24 @@
                             <span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu">
-                            <li> @Html.ActionLink("Local", "All", "Suppliers") </li>
+                            <li> @Html.ActionLink("Local", "All", "Suppliers", new {type = "local"}, null) </li>
                             <li> @Html.ActionLink("Importers", "All", "Suppliers", new { type = "importers" }, null)</li>
                         </ul>
                     </li>
                 </ul>
 
                 <ul class="nav navbar-nav navbar-right">
+                    <li>@ViewBag.Username</li>
                     <li>
                         @Html.ActionLink("Register", "Register", "User")
                     </li>
                     <li>
-                        @Html.ActionLink("Login","Login","User")
+                        @Html.ActionLink("Login", "Login", "User")
                     </li>
                     <li>
                         @using (Html.BeginForm("Logout", "User", FormMethod.Post))
                         {
-                            <input type="submit" value="Logout" class="btn btn-lg-15 btn-default" />
+                            <input type="submit" value="Logout" class="btn btn-lg-15 btn-default"/>
                         }
                     </li>
                 </ul>
