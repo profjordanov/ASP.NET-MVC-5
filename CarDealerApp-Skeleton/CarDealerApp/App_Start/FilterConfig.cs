@@ -1,4 +1,5 @@
-﻿using System.Web;
+﻿using System;
+using System.Web;
 using System.Web.Mvc;
 
 namespace CarDealerApp
@@ -7,7 +8,11 @@ namespace CarDealerApp
     {
         public static void RegisterGlobalFilters(GlobalFilterCollection filters)
         {
-            filters.Add(new HandleErrorAttribute());
+            filters.Add(new HandleErrorAttribute()
+            {
+                ExceptionType = typeof(Exception),
+                View = "CustomError"
+            });
         }
     }
 }

@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using CarDealer.Data;
 using CarDealer.Models.BindingModels;
 using CarDealer.Models.ViewModels;
 using CarDealer.Services;
+using CarDealerApp.Filters;
 using CarDealerApp.Security;
 
 namespace CarDealerApp.Controllers
@@ -19,7 +21,29 @@ namespace CarDealerApp.Controllers
         {
             this.service = new CarsService();
         }
+
         [HttpGet]
+        [Route("details/{id}")]
+        [HandleError(ExceptionType = typeof(ArgumentOutOfRangeException), View = "OutOfRangeError")]
+        [Log]
+        public ActionResult Details(int id)
+        {
+            var context = new CarDealerContext();
+            var car = context.Cars.Find(id);
+            if (car == null)
+            {
+                throw new ArgumentOutOfRangeException(nameof(id), id, "there is no such car.");
+            }
+            else if(car.TravelledDistance > 1000000)
+            {
+                throw new InvalidOperationException("The car is too old to be driven");
+            }
+
+            return this.View();
+        }
+
+        [HttpGet]
+        [Log]
         [Route("{make?}")]
         public ActionResult All(string make)
         {

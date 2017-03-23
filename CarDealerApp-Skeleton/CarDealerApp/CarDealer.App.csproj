@@ -141,6 +141,8 @@
     <Compile Include="Controllers\SuppliersController.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Extensions\HtmlhelperExtensions.cs" />
+    <Compile Include="Filters\LogAttribute.cs" />
+    <Compile Include="Filters\TimerAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -207,6 +209,9 @@
     <Content Include="Views\Suppliers\Delete.cshtml" />
     <Content Include="Views\Logs\All.cshtml" />
     <Content Include="Views\Logs\DeleteAll.cshtml" />
+    <Content Include="Views\Shared\CustomError.cshtml" />
+    <Content Include="Views\Shared\OutOfRangeError.cshtml" />
+    <Content Include="Views\Car\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
