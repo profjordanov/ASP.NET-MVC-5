@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CameraBazaar.Web", "CameraBazaar.Web\CameraBazaar.Web.csproj", "{87DEEF21-2066-4D29-BB9A-439A04614FA0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CameraBazaar.Services", "CameraBazaar.Services\CameraBazaar.Services.csproj", "{6AA63AED-2C17-424D-8211-0428B2944B27}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CameraBazaar.Models", "CameraBazaar.Models\CameraBazaar.Models.csproj", "{3229F709-1A99-477B-A106-FAC8E0894B40}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CameraBazaar.Data", "CameraBazaar.Data\CameraBazaar.Data.csproj", "{53126E7B-77BF-47A2-9CBD-676A12237222}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{87DEEF21-2066-4D29-BB9A-439A04614FA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87DEEF21-2066-4D29-BB9A-439A04614FA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87DEEF21-2066-4D29-BB9A-439A04614FA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87DEEF21-2066-4D29-BB9A-439A04614FA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AA63AED-2C17-424D-8211-0428B2944B27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AA63AED-2C17-424D-8211-0428B2944B27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AA63AED-2C17-424D-8211-0428B2944B27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AA63AED-2C17-424D-8211-0428B2944B27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3229F709-1A99-477B-A106-FAC8E0894B40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3229F709-1A99-477B-A106-FAC8E0894B40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3229F709-1A99-477B-A106-FAC8E0894B40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3229F709-1A99-477B-A106-FAC8E0894B40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53126E7B-77BF-47A2-9CBD-676A12237222}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53126E7B-77BF-47A2-9CBD-676A12237222}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53126E7B-77BF-47A2-9CBD-676A12237222}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53126E7B-77BF-47A2-9CBD-676A12237222}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
