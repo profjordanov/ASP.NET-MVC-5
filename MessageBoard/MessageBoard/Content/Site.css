@@ -1,24 +1,26 @@
-﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+﻿.message {
+  background: none repeat scroll 0 0 #eaeaea;
+  border: 1px solid #aaaaaa;
+  border-radius: 5px 5px 5px 5px;
+  margin-bottom: 5px;
+  margin-left: 0;
+  margin-right: -20px;
+  padding: 5px;
 }
-
-/* Set padding to keep content from hitting the edges */
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+.message .title {
+  font-size: 20px;
+  font-weight: bold;
+  -webkit-text-shadow: 2px 2px 4px #aaaaaa;
+  text-shadow: 2px 2px 4px #aaaaaa;
 }
-
-/* Override the default bootstrap behavior where horizontal description lists 
-   will truncate terms that are too long to fit in the left column 
-*/
-.dl-horizontal dt {
-    white-space: normal;
+.message .reply {
+  border-top: 1px solid #aaaaaa;
+  margin-left: 15px;
+  margin-top: 5px;
 }
-
-/* Set width on the form input elements since they're 100% wide by default */
-input,
-select,
-textarea {
-    max-width: 280px;
+.message .reply .created {
+  font-size: 9px;
+  margin-left: 10px;
+  -webkit-text-shadow: 2px 2px 3px #aaaaaa;
+  text-shadow: 2px 2px 3px #aaaaaa;
 }

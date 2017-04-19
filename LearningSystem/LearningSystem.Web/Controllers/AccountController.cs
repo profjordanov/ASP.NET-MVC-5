@@ -155,6 +155,7 @@ namespace LearningSystem.Web.Controllers
             {
                 var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
                 var result = await UserManager.CreateAsync(user, model.Password);
+               // this.UserManager.AddToRole(user.Id, "Student");
                 if (result.Succeeded)
                 {
                     await SignInManager.SignInAsync(user, isPersistent:false, rememberBrowser:false);

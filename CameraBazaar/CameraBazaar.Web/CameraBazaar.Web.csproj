@@ -194,6 +194,11 @@
     <Content Include="Views\Cameras\All.cshtml" />
     <Content Include="Views\Cameras\Details.cshtml" />
     <Content Include="Views\Cameras\Create.cshtml" />
+    <Content Include="Views\User\Profile.cshtml" />
+    <Content Include="Views\User\MyProfile.cshtml" />
+    <Content Include="Views\Cameras\Edit.cshtml" />
+    <Content Include="Views\User\EditProfile.cshtml" />
+    <Content Include="Views\Cameras\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

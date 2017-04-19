@@ -44,6 +44,9 @@
     <Compile Include="Attributes\MaxIsoAttribute.cs" />
     <Compile Include="Attributes\MinIsoAttribute.cs" />
     <Compile Include="Attributes\UsernameAttribute.cs" />
+    <Compile Include="BindingModels\AddCameraBm.cs" />
+    <Compile Include="BindingModels\EditCameraBm.cs" />
+    <Compile Include="BindingModels\EditUserBm.cs" />
     <Compile Include="BindingModels\LoginUserBm.cs" />
     <Compile Include="BindingModels\RegisterUserBm.cs" />
     <Compile Include="Constants\ValidationMessages.cs" />
@@ -55,8 +58,12 @@
     <Compile Include="Enums\Make.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModels\AddCameraVm.cs" />
+    <Compile Include="ViewModels\DeleteCameraVm.cs" />
     <Compile Include="ViewModels\DetailsCameraVm.cs" />
+    <Compile Include="ViewModels\EditCameraVm.cs" />
+    <Compile Include="ViewModels\EditUserVm.cs" />
     <Compile Include="ViewModels\LoginUserVm.cs" />
+    <Compile Include="ViewModels\ProfilePageVm.cs" />
     <Compile Include="ViewModels\RegisterUserVm.cs" />
     <Compile Include="ViewModels\ShortCameraVm.cs" />
   </ItemGroup>

@@ -44,20 +44,82 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DotNetOpenAuth.AspNet, Version=4.1.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <HintPath>..\packages\DotNetOpenAuth.AspNet.4.1.4.12333\lib\net45-full\DotNetOpenAuth.AspNet.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.Core, Version=4.1.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <HintPath>..\packages\DotNetOpenAuth.Core.4.1.4.12333\lib\net45-full\DotNetOpenAuth.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OAuth, Version=4.1.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <HintPath>..\packages\DotNetOpenAuth.OAuth.Core.4.1.4.12333\lib\net45-full\DotNetOpenAuth.OAuth.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OAuth.Consumer, Version=4.1.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <HintPath>..\packages\DotNetOpenAuth.OAuth.Consumer.4.1.4.12333\lib\net45-full\DotNetOpenAuth.OAuth.Consumer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OpenId, Version=4.1.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <HintPath>..\packages\DotNetOpenAuth.OpenId.Core.4.1.4.12333\lib\net45-full\DotNetOpenAuth.OpenId.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OpenId.RelyingParty, Version=4.1.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <HintPath>..\packages\DotNetOpenAuth.OpenId.RelyingParty.4.1.4.12333\lib\net45-full\DotNetOpenAuth.OpenId.RelyingParty.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Web.WebPages.OAuth, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.OAuth.3.2.3\lib\net45\Microsoft.Web.WebPages.OAuth.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ninject, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ninject.3.2.0.0\lib\net45-full\Ninject.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ninject.Web.Common, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ninject.Web.Common.3.2.0.0\lib\net45-full\Ninject.Web.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ninject.Web.Mvc, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ninject.MVC3.3.2.1.0\lib\net45-full\Ninject.Web.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http">
+      <HintPath>..\packages\Microsoft.Net.Http.2.0.20505.0\lib\net40\System.Net.Http.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+      <HintPath>..\packages\Microsoft.Net.Http.2.0.20505.0\lib\net40\System.Net.Http.WebRequest.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Extensions" />
@@ -70,10 +132,6 @@
     <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Net.Http">
-    </Reference>
-    <Reference Include="System.Net.Http.WebRequest">
     </Reference>
     <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
@@ -102,6 +160,14 @@
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
     </Reference>
+    <Reference Include="WebActivatorEx, Version=2.0.0.0, Culture=neutral, PublicKeyToken=7b26dc2a43f6a0d4, processorArchitecture=MSIL">
+      <HintPath>..\packages\WebActivatorEx.2.0\lib\net40\WebActivatorEx.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WebApiContrib.IoC.Ninject, Version=0.9.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\WebApiContrib.IoC.Ninject.0.9.3.0\lib\net40\WebApiContrib.IoC.Ninject.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="WebGrease">
       <Private>True</Private>
       <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
@@ -109,6 +175,14 @@
     <Reference Include="Antlr3.Runtime">
       <Private>True</Private>
       <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="WebMatrix.Data, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.Data.3.2.3\lib\net45\WebMatrix.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WebMatrix.WebData, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.WebData.3.2.3\lib\net45\WebMatrix.WebData.dll</HintPath>
+      <Private>True</Private>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -162,36 +236,165 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Start\AuthConfig.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\IdentityConfig.cs" />
+    <Compile Include="App_Start\NinjectWebCommon.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\RepliesController.cs" />
+    <Compile Include="Controllers\TopicsController.cs" />
+    <Compile Include="Data\IMessageBoardRepository.cs" />
+    <Compile Include="Data\MessageBoardContext.cs" />
+    <Compile Include="Data\MessageBoardMigrationsConfiguration.cs" />
+    <Compile Include="Data\MessageBoardRepository.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201704150850016_Initial.cs" />
+    <Compile Include="Migrations\201704150850016_Initial.Designer.cs">
+      <DependentUpon>201704150850016_Initial.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\ContactModel.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Reply.cs" />
+    <Compile Include="Models\Topic.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\IMailService.cs" />
+    <Compile Include="Services\MailService.cs" />
+    <Compile Include="Services\MockMailService.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Content\Site.min.css" />
+    <Content Include="Content\Template\font-awesome\fontawesome-webfont.svg" />
+    <Content Include="Content\Template\img\arrow-down.png" />
+    <Content Include="Content\Template\img\arrow-right.png" />
+    <Content Include="Content\Template\img\ashok.jpg" />
+    <Content Include="Content\Template\img\bg_direction_nav.png" />
+    <Content Include="Content\Template\img\facebook.png" />
+    <Content Include="Content\Template\img\favicon\favicon.png" />
+    <Content Include="Content\Template\img\foot-quote.png" />
+    <Content Include="Content\Template\img\googleplus.png" />
+    <Content Include="Content\Template\img\linkedin.png" />
+    <Content Include="Content\Template\img\photos\1.jpg" />
+    <Content Include="Content\Template\img\photos\2.jpg" />
+    <Content Include="Content\Template\img\photos\3.jpg" />
+    <Content Include="Content\Template\img\photos\4.jpg" />
+    <Content Include="Content\Template\img\photos\5.jpg" />
+    <Content Include="Content\Template\img\photos\6.jpg" />
+    <Content Include="Content\Template\img\photos\7.jpg" />
+    <Content Include="Content\Template\img\photos\8.jpg" />
+    <Content Include="Content\Template\img\photos\s1.jpg" />
+    <Content Include="Content\Template\img\photos\s2.jpg" />
+    <Content Include="Content\Template\img\photos\s3.jpg" />
+    <Content Include="Content\Template\img\photos\s4.jpg" />
+    <Content Include="Content\Template\img\photos\s5.jpg" />
+    <Content Include="Content\Template\img\photos\s6.jpg" />
+    <Content Include="Content\Template\img\photos\s7.jpg" />
+    <Content Include="Content\Template\img\photos\s8.jpg" />
+    <Content Include="Content\Template\img\photos\tn_1.jpg" />
+    <Content Include="Content\Template\img\photos\tn_11.jpg" />
+    <Content Include="Content\Template\img\photos\tn_2.jpg" />
+    <Content Include="Content\Template\img\photos\tn_22.jpg" />
+    <Content Include="Content\Template\img\photos\tn_3.jpg" />
+    <Content Include="Content\Template\img\photos\tn_33.jpg" />
+    <Content Include="Content\Template\img\photos\tn_4.jpg" />
+    <Content Include="Content\Template\img\photos\tn_44.jpg" />
+    <Content Include="Content\Template\img\photos\tn_5.jpg" />
+    <Content Include="Content\Template\img\photos\tn_55.jpg" />
+    <Content Include="Content\Template\img\photos\tn_6.jpg" />
+    <Content Include="Content\Template\img\photos\tn_66.jpg" />
+    <Content Include="Content\Template\img\photos\tn_7.jpg" />
+    <Content Include="Content\Template\img\photos\tn_77.jpg" />
+    <Content Include="Content\Template\img\photos\tn_8.jpg" />
+    <Content Include="Content\Template\img\photos\tn_88.jpg" />
+    <Content Include="Content\Template\img\prettyPhoto\dark_rounded\btnNext.png" />
+    <Content Include="Content\Template\img\prettyPhoto\dark_rounded\btnPrevious.png" />
+    <Content Include="Content\Template\img\prettyPhoto\dark_rounded\contentPattern.png" />
+    <Content Include="Content\Template\img\prettyPhoto\dark_rounded\default_thumbnail.gif" />
+    <Content Include="Content\Template\img\prettyPhoto\dark_rounded\loader.gif" />
+    <Content Include="Content\Template\img\prettyPhoto\dark_rounded\sprite.png" />
+    <Content Include="Content\Template\img\prettyPhoto\dark_square\btnNext.png" />
+    <Content Include="Content\Template\img\prettyPhoto\dark_square\btnPrevious.png" />
+    <Content Include="Content\Template\img\prettyPhoto\dark_square\contentPattern.png" />
+    <Content Include="Content\Template\img\prettyPhoto\dark_square\default_thumbnail.gif" />
+    <Content Include="Content\Template\img\prettyPhoto\dark_square\loader.gif" />
+    <Content Include="Content\Template\img\prettyPhoto\dark_square\sprite.png" />
+    <Content Include="Content\Template\img\prettyPhoto\default\default_thumb.png" />
+    <Content Include="Content\Template\img\prettyPhoto\default\loader.gif" />
+    <Content Include="Content\Template\img\prettyPhoto\default\sprite.png" />
+    <Content Include="Content\Template\img\prettyPhoto\default\sprite_next.png" />
+    <Content Include="Content\Template\img\prettyPhoto\default\sprite_prev.png" />
+    <Content Include="Content\Template\img\prettyPhoto\default\sprite_x.png" />
+    <Content Include="Content\Template\img\prettyPhoto\default\sprite_y.png" />
+    <Content Include="Content\Template\img\prettyPhoto\facebook\btnNext.png" />
+    <Content Include="Content\Template\img\prettyPhoto\facebook\btnPrevious.png" />
+    <Content Include="Content\Template\img\prettyPhoto\facebook\contentPatternBottom.png" />
+    <Content Include="Content\Template\img\prettyPhoto\facebook\contentPatternLeft.png" />
+    <Content Include="Content\Template\img\prettyPhoto\facebook\contentPatternRight.png" />
+    <Content Include="Content\Template\img\prettyPhoto\facebook\contentPatternTop.png" />
+    <Content Include="Content\Template\img\prettyPhoto\facebook\default_thumbnail.gif" />
+    <Content Include="Content\Template\img\prettyPhoto\facebook\loader.gif" />
+    <Content Include="Content\Template\img\prettyPhoto\facebook\sprite.png" />
+    <Content Include="Content\Template\img\prettyPhoto\light_rounded\btnNext.png" />
+    <Content Include="Content\Template\img\prettyPhoto\light_rounded\btnPrevious.png" />
+    <Content Include="Content\Template\img\prettyPhoto\light_rounded\default_thumbnail.gif" />
+    <Content Include="Content\Template\img\prettyPhoto\light_rounded\loader.gif" />
+    <Content Include="Content\Template\img\prettyPhoto\light_rounded\sprite.png" />
+    <Content Include="Content\Template\img\prettyPhoto\light_square\btnNext.png" />
+    <Content Include="Content\Template\img\prettyPhoto\light_square\btnPrevious.png" />
+    <Content Include="Content\Template\img\prettyPhoto\light_square\default_thumbnail.gif" />
+    <Content Include="Content\Template\img\prettyPhoto\light_square\loader.gif" />
+    <Content Include="Content\Template\img\prettyPhoto\light_square\sprite.png" />
+    <Content Include="Content\Template\img\quote-blue.png" />
+    <Content Include="Content\Template\img\quote-green.png" />
+    <Content Include="Content\Template\img\quote-red.png" />
+    <Content Include="Content\Template\img\rss.png" />
+    <Content Include="Content\Template\img\twitter.png" />
+    <Content Include="Content\Template\style\blue.css" />
+    <Content Include="Content\Template\style\bootstrap-responsive.css" />
+    <Content Include="Content\Template\style\bootstrap.css" />
+    <Content Include="Content\Template\style\ddlevelsmenu-base.css" />
+    <Content Include="Content\Template\style\ddlevelsmenu-topbar.css" />
+    <Content Include="Content\Template\style\flexslider.css" />
+    <Content Include="Content\Template\style\font-awesome-ie7.css" />
+    <Content Include="Content\Template\style\font-awesome.css" />
+    <Content Include="Content\Template\style\green.css" />
+    <Content Include="Content\Template\style\prettyPhoto.css" />
+    <Content Include="Content\Template\style\red.css" />
+    <Content Include="Content\Template\style\style.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Content\Template\font-awesome\fontawesome-webfont.eot" />
+    <Content Include="Content\Template\font-awesome\fontawesome-webfont.ttf" />
+    <Content Include="Content\Template\font-awesome\fontawesome-webfont.woff" />
+    <Content Include="Content\Site.less" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\custom.js" />
+    <Content Include="Scripts\ddlevelsmenu.js" />
+    <Content Include="Scripts\easing.js" />
+    <Content Include="Scripts\flexslider.js" />
+    <Content Include="Scripts\gmap.js" />
+    <Content Include="Scripts\html5shim.js" />
+    <Content Include="Scripts\isotype.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.prettyPhoto.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
@@ -234,6 +437,7 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Home\MyMessages.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -245,6 +449,11 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201704150850016_Initial.resx">
+      <DependentUpon>201704150850016_Initial.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

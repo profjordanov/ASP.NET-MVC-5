@@ -2,3 +2,4 @@ C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\CameraBazaar\Ca
 C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\CameraBazaar\CameraBazaar.Models\bin\Debug\CameraBazaar.Models.pdb
 C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\CameraBazaar\CameraBazaar.Models\obj\Debug\CameraBazaar.Models.dll
 C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\CameraBazaar\CameraBazaar.Models\obj\Debug\CameraBazaar.Models.pdb
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\CameraBazaar\CameraBazaar.Models\obj\Debug\CameraBazaar.Models.csprojResolveAssemblyReference.cache

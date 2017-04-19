@@ -5,6 +5,7 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
 using Microsoft.Owin.Security.Cookies;
+using Microsoft.Owin.Security.Facebook;
 using Microsoft.Owin.Security.Google;
 using Owin;
 
@@ -48,6 +49,7 @@ namespace LearningSystem.Web
             app.UseTwoFactorRememberBrowserCookie(DefaultAuthenticationTypes.TwoFactorRememberBrowserCookie);
 
             // Uncomment the following lines to enable logging in with third party login providers
+
             //app.UseMicrosoftAccountAuthentication(
             //    clientId: "",
             //    clientSecret: "");
@@ -56,15 +58,20 @@ namespace LearningSystem.Web
             //   consumerKey: "",
             //   consumerSecret: "");
 
-            //app.UseFacebookAuthentication(
-            //   appId: "",
-            //   appSecret: "");
+           
+            var facebookAuthenticationOptions = new FacebookAuthenticationOptions()
+            {
+                AppId = "432462157093370",
+                AppSecret = "8f71bdf028ffe9f4a7ea8967d31bf033"
+            };
+            facebookAuthenticationOptions.Scope.Add("email");
+            app.UseFacebookAuthentication(facebookAuthenticationOptions);
 
-            //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
-            //{
-            //    ClientId = "",
-            //    ClientSecret = ""
-            //});
+            app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
+            {
+                ClientId = "1002136452521-oje37ko9o21s7det69uop1u7lsnk8492.apps.googleusercontent.com",
+                ClientSecret = "NOrgGpAnUCV5g2pFJ9RSpPiC"
+            });
         }
     }
 }

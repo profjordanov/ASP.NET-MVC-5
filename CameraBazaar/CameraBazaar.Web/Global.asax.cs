@@ -28,8 +28,14 @@ namespace CameraBazaar.Web
             Mapper.Initialize(expression =>
             {
                 expression.CreateMap<RegisterUserBm, User>();
-                expression.CreateMap<Camera, ShortCameraVm>();
+                expression.CreateMap<AddCameraBm, Camera>();
+                expression.CreateMap<AddCameraBm, AddCameraVm>();
+                expression.CreateMap<Camera, EditCameraVm>();
+                expression.CreateMap<EditCameraBm, EditCameraVm>();
+                expression.CreateMap<EditCameraBm, Camera>();
+                expression.CreateMap<Camera, DeleteCameraVm>();
                 expression.CreateMap<Camera, DetailsCameraVm>();
+                expression.CreateMap<Camera, ShortCameraVm>();
             });
         }
     }

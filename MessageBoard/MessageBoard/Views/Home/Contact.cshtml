@@ -1,17 +1,96 @@
 ﻿@{
-    ViewBag.Title = "Contact";
+    ViewBag.Title = "Contact Us";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
+@section scripts
+{
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+}
+<div class="span12">
+    <div class="whity content">
+        <!-- Main Content Starts Here -->
+        <!-- Content should be encloased inside div with the class "posts" -->
+        <div class="posts">
+            <!-- Each entry should be enclosed inside div with the class "entry" -->
+            <div class="entry">
+                <div class="padd">
+                    <!-- Contact Page title -->
+                    <h2>Contact Us</h2>
+                    <!-- Contact Page Para -->
+                </div>
 
-<address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
-</address>
+                <div class="row">
+                    <div class="span8">
+                        <div class="padd">
+                            <div class="co-form">
+                                <form class="form-horizontal" method="post">
+                                    <fieldset>
+                                        <div class="control-group">
+                                            <label class="control-label" for="name">Name</label>
+                                            <div class="controls">
+                                                <input type="text" class="input-medium" id="name" name="name" data-val="true" data-val-required="*">
+                                                <span class="field-validation-valid" data-valmsg-for="name" data-valmsg-replace="true"></span>
+                                            </div>
+                                        </div>
+                                        <div class="control-group">
+                                            <label class="control-label" for="email">Email</label>
+                                            <div class="controls">
+                                                <input type="text" class="input-medium" id="email" name="email" data-val="true" data-val-required="*" data-val-email="Not Valid">
+                                                <span class="field-validation-valid" data-valmsg-for="email" data-valmsg-replace="true"></span>
+                                            </div>
+                                        </div>
+                                        <div class="control-group">
+                                            <label class="control-label" for="website">Website</label>
+                                            <div class="controls">
+                                                <input type="text" class="input-medium" id="website" name="website" data-val="true" data-val-required="*">
+                                                <span class="field-validation-valid" data-valmsg-for="website" data-valmsg-replace="true"></span>
+                                            </div>
+                                        </div>
+                                        <div class="control-group">
+                                            <label class="control-label" for="comment">Message</label>
+                                            <div class="controls">
+                                                <textarea class="input-medium" id="comment" rows="3" name="comment" data-val="true" data-val-required="*"></textarea>
+                                                <span class="field-validation-valid" data-valmsg-for="comment" data-valmsg-replace="true"></span>
+                                            </div>
+                                        </div>
+                                        <div class="form-actions">
+                                            <button type="submit" class="btn">Send</button>
+                                            @if (ViewBag.MailSent != null && ViewBag.MailSent)
+                                            {
+                                                <div>Mail Sent!</div>
+                                            }
+                                        </div>
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span4">
+                        <div class="padd">
+                            <p class="caddress">
+                                <address>
+                                    <strong>Twitter, Inc.</strong><br>
+                                    795 Folsom Ave, Suite 600<br>
+                                    San Francisco, CA 94107<br>
+                                    <abbr title="Phone">P:</abbr>
+                                    (123) 456-7890.<br>
+                                    <br>
+                                    <strong>Full Name</strong><br>
+                                    <a href="mailto:#">first.last@gmail.com</a>
+                                </address>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gmap">
+                    <div class="padd">
+                        <!-- Goto Google maps and copy the embed code of your location. Replace the below embed code with your code. -->
+                        <iframe height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.co.in/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Google+India+Bangalore,+Bennigana+Halli,+Bangalore,+Karnataka&amp;aq=0&amp;oq=google+&amp;sll=9.930582,78.12303&amp;sspn=0.192085,0.308647&amp;ie=UTF8&amp;hq=Google&amp;hnear=Bennigana+Halli,+Bangalore,+Bengaluru+Urban,+Karnataka&amp;t=m&amp;ll=12.993518,77.660294&amp;spn=0.012545,0.036006&amp;z=15&amp;output=embed"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Main Content Ends Here -->
+    </div>
 
-<address>
-    <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-</address>
+</div>

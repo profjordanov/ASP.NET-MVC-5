@@ -1,31 +1,118 @@
-﻿@{
+﻿@model IEnumerable<MessageBoard.Models.Topic>
+@{
     ViewBag.Title = "Home Page";
 }
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+<div class="message-header">
+    <h1>Message Board</h1>
+    <p class="lead">Latest Messages...</p>
 </div>
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+<div class="messages">
+    <div class="message row">
+        <div class="title span10">
+            Lorem ipsum dolor sit amet.
+        </div>
+        <div class="date span2">
+            Feb 12, 2013
+        </div>
+        <div class="contents span12">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit fusce vel sapien elit in malesuada semper mi, id sollicitudin urna fermentum ut fusce varius nisl ac ipsum gravida vel pretium tellus.
+        </div>
+        <div class="toolbar span12">
+            <button class="btn btn-primary reply-button">Reply</button>
+        </div>
+        <div class="replies span12">
+            <div class="reply">
+                <div class="created pull-right">
+                    Feb 28, 2013
+                </div>
+                <div class="content">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit fusce vel sapien elit in malesuada semper mi, id sollicitudin urna fermentum ut fusce varius nisl ac ipsum gravida vel pretium tellus.
+                </div>
+            </div>
+            <div class="reply">
+                <div class="created pull-right">
+                    Feb 28, 2013
+                </div>
+                <div class="content">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit fusce vel sapien elit in malesuada semper mi, id sollicitudin urna fermentum ut fusce varius nisl ac ipsum gravida vel pretium tellus.
+                </div>
+            </div>
+            <div class="reply">
+                <div class="created pull-right">
+                    Feb 28, 2013
+                </div>
+                <div class="content">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit fusce vel sapien elit in malesuada semper mi, id sollicitudin urna fermentum ut fusce varius nisl ac ipsum gravida vel pretium tellus.
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+    <div class="message row">
+        <div class="title span10">
+            Lorem ipsum dolor sit amet.
+        </div>
+        <div class="date span2">
+            Feb 12, 2013
+        </div>
+        <div class="contents span12">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit fusce vel sapien elit in malesuada semper mi, id sollicitudin urna fermentum ut fusce varius nisl ac ipsum gravida vel pretium tellus.
+        </div>
+        <div class="toolbar span12">
+            <button class="btn btn-primary reply-button">Reply</button>
+        </div>
+        <div class="replies span12"></div>
     </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+    <div class="message row">
+        <div class="title span10">
+            Lorem ipsum dolor sit amet.
+        </div>
+        <div class="date span2">
+            Feb 12, 2013
+        </div>
+        <div class="contents span12">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit fusce vel sapien elit in malesuada semper mi, id sollicitudin urna fermentum ut fusce varius nisl ac ipsum gravida vel pretium tellus.
+        </div>
+        <div class="toolbar span12">
+            <button class="btn btn-primary reply-button">Reply</button>
+        </div>
+        <div class="replies span12"></div>
+    </div>
+    <div class="message row">
+        <div class="title span10">
+            Lorem ipsum dolor sit amet.
+        </div>
+        <div class="date span2">
+            Feb 12, 2013
+        </div>
+        <div class="contents span12">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit fusce vel sapien elit in malesuada semper mi, id sollicitudin urna fermentum ut fusce varius nisl ac ipsum gravida vel pretium tellus.
+        </div>
+        <div class="toolbar span12">
+            <button class="btn btn-primary reply-button">Reply</button>
+        </div>
+        <div class="replies span12"></div>
+    </div>
+    <div class="message row">
+        <div class="title span10">
+            Lorem ipsum dolor sit amet.
+        </div>
+        <div class="date span2">
+            Feb 12, 2013
+        </div>
+        <div class="contents span12">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit fusce vel sapien elit in malesuada semper mi, id sollicitudin urna fermentum ut fusce varius nisl ac ipsum gravida vel pretium tellus.
+        </div>
+        <div class="toolbar span12">
+            <button class="btn btn-primary reply-button">Reply</button>
+        </div>
+        <div class="replies span12"></div>
     </div>
 </div>
+
+@foreach (var topic in Model)
+{
+    <div>@topic.Title</div>
+    <div>-- @topic.Body</div>
+}

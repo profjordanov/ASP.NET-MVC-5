@@ -1,0 +1,35 @@
+﻿@baseMessageColor: #aaa;
+
+.message
+{
+  background: none repeat scroll 0 0 lighten(@baseMessageColor, 25%);
+  border: 1px solid @baseMessageColor;
+  border-radius: 5px 5px 5px 5px;
+  margin-bottom: 5px;
+  margin-left: 0;
+  margin-right: -20px;
+  padding: 5px;
+
+  .title
+  {
+    font-size: 20px;
+    font-weight: bold;
+    -webkit-text-shadow: 2px 2px 4px @baseMessageColor;
+    text-shadow: 2px 2px 4px @baseMessageColor;
+  }
+
+  .reply
+  {
+    border-top: 1px solid @baseMessageColor;
+    margin-left: 15px;
+    margin-top: 5px;
+
+    .created
+    {
+      font-size: 9px;
+      margin-left: 10px;
+      -webkit-text-shadow: 2px 2px 3px @baseMessageColor;
+      text-shadow: 2px 2px 3px @baseMessageColor;
+    }
+  }
+}

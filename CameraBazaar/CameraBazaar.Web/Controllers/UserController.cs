@@ -1,6 +1,7 @@
 ﻿using System.Web;
 using System.Web.Mvc;
 using CameraBazaar.Models.BindingModels;
+using CameraBazaar.Models.Enitities;
 using CameraBazaar.Models.ViewModels;
 using CameraBazaar.Services;
 using CameraBazaar.Web.Security;
@@ -69,6 +70,66 @@ namespace CameraBazaar.Web.Controllers
             }
 
             return this.RedirectToAction("Login", "User");
+        }
+
+        [HttpGet]
+        [Route("profile/{username?}")]
+        public ActionResult Profile(string username)
+        {
+            string sessionId = this.Request.Cookies.Get("sessionId")?.Value;
+            if (!AuthenticationManager.IsAuthenticated(sessionId))
+            {
+                return this.RedirectToAction("Login", "User");
+            }
+
+            User user = AuthenticationManager.GetAuthenticatedUser(sessionId);
+            if (string.IsNullOrEmpty(username))
+            {
+                ProfilePageVm loggedUserVm = this.service.GetProfilePage(user.Username, user.Username);
+                if (loggedUserVm == null)
+                {
+                    return new HttpNotFoundResult();
+                }
+
+                return this.View("MyProfile", loggedUserVm);
+            }
+
+            ProfilePageVm vm = this.service.GetProfilePage(username, user.Username);
+            return this.View(vm);
+        }
+
+        [HttpGet]
+        [Route("editProfile")]
+        public ActionResult EditProfile()
+        {
+            string sessionId = this.Request.Cookies.Get("sessionId")?.Value;
+            if (!AuthenticationManager.IsAuthenticated(sessionId))
+            {
+                return this.RedirectToAction("Login", "User");
+            }
+
+            User user = AuthenticationManager.GetAuthenticatedUser(sessionId);
+            EditUserVm vm = this.service.GetEditUserVm(user);
+            return this.View(vm);
+        }
+
+        [HttpPost]
+        [Route("editProfile")]
+        public ActionResult EditProfile(EditUserBm bind)
+        {
+            string sessionId = this.Request.Cookies.Get("sessionId")?.Value;
+            if (!AuthenticationManager.IsAuthenticated(sessionId))
+            {
+                return this.RedirectToAction("Login", "User");
+            }
+            User user = AuthenticationManager.GetAuthenticatedUser(sessionId);
+            if (this.ModelState.IsValid && bind.CurrentPassword== user.Password)
+            {
+                this.service.EditUser(bind, user);
+                return this.RedirectToAction("Profile");
+            }
+            EditUserVm vm = this.service.GetEditUserVm(user);
+            return this.View(vm);
         }
     }
 }
