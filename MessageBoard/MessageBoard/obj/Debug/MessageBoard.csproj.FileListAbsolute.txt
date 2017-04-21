@@ -108,3 +108,4 @@ C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\Me
 C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\System.Web.Http.xml
 C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\System.Web.Http.WebHost.xml
 C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\WebApiContrib.IoC.Ninject.dll
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\obj\Debug\MessageBoard.csprojResolveAssemblyReference.cache

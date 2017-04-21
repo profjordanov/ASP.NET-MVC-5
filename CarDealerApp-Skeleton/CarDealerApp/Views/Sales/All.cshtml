@@ -1,5 +1,4 @@
-﻿@using CarDealer.Models.ViewModels
-@model IEnumerable<SaleVm>
+﻿@model IEnumerable<CarDealer.Models.ViewModels.SaleVm>
 @{
     ViewBag.Title = "All Sales";
 }
@@ -14,7 +13,7 @@
     @foreach (var sale in Model)
     {
         <tr>
-            <td>@sale.Car.Model @sale.Car.Make</td>
+            
             <td>@sale.Customer.Name</td>
             <td>@sale.Price</td>
             <td>@sale.Discount</td>

@@ -3,116 +3,45 @@
     ViewBag.Title = "Home Page";
 }
 
-<div class="message-header">
-    <h1>Message Board</h1>
-    <p class="lead">Latest Messages...</p>
-</div>
-
-<div class="messages">
-    <div class="message row">
-        <div class="title span10">
-            Lorem ipsum dolor sit amet.
-        </div>
-        <div class="date span2">
-            Feb 12, 2013
-        </div>
-        <div class="contents span12">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit fusce vel sapien elit in malesuada semper mi, id sollicitudin urna fermentum ut fusce varius nisl ac ipsum gravida vel pretium tellus.
-        </div>
-        <div class="toolbar span12">
-            <button class="btn btn-primary reply-button">Reply</button>
-        </div>
-        <div class="replies span12">
-            <div class="reply">
-                <div class="created pull-right">
-                    Feb 28, 2013
-                </div>
-                <div class="content">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit fusce vel sapien elit in malesuada semper mi, id sollicitudin urna fermentum ut fusce varius nisl ac ipsum gravida vel pretium tellus.
-                </div>
-            </div>
-            <div class="reply">
-                <div class="created pull-right">
-                    Feb 28, 2013
-                </div>
-                <div class="content">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit fusce vel sapien elit in malesuada semper mi, id sollicitudin urna fermentum ut fusce varius nisl ac ipsum gravida vel pretium tellus.
-                </div>
-            </div>
-            <div class="reply">
-                <div class="created pull-right">
-                    Feb 28, 2013
-                </div>
-                <div class="content">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit fusce vel sapien elit in malesuada semper mi, id sollicitudin urna fermentum ut fusce varius nisl ac ipsum gravida vel pretium tellus.
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="message row">
-        <div class="title span10">
-            Lorem ipsum dolor sit amet.
-        </div>
-        <div class="date span2">
-            Feb 12, 2013
-        </div>
-        <div class="contents span12">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit fusce vel sapien elit in malesuada semper mi, id sollicitudin urna fermentum ut fusce varius nisl ac ipsum gravida vel pretium tellus.
-        </div>
-        <div class="toolbar span12">
-            <button class="btn btn-primary reply-button">Reply</button>
-        </div>
-        <div class="replies span12"></div>
-    </div>
-    <div class="message row">
-        <div class="title span10">
-            Lorem ipsum dolor sit amet.
-        </div>
-        <div class="date span2">
-            Feb 12, 2013
-        </div>
-        <div class="contents span12">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit fusce vel sapien elit in malesuada semper mi, id sollicitudin urna fermentum ut fusce varius nisl ac ipsum gravida vel pretium tellus.
-        </div>
-        <div class="toolbar span12">
-            <button class="btn btn-primary reply-button">Reply</button>
-        </div>
-        <div class="replies span12"></div>
-    </div>
-    <div class="message row">
-        <div class="title span10">
-            Lorem ipsum dolor sit amet.
-        </div>
-        <div class="date span2">
-            Feb 12, 2013
-        </div>
-        <div class="contents span12">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit fusce vel sapien elit in malesuada semper mi, id sollicitudin urna fermentum ut fusce varius nisl ac ipsum gravida vel pretium tellus.
-        </div>
-        <div class="toolbar span12">
-            <button class="btn btn-primary reply-button">Reply</button>
-        </div>
-        <div class="replies span12"></div>
-    </div>
-    <div class="message row">
-        <div class="title span10">
-            Lorem ipsum dolor sit amet.
-        </div>
-        <div class="date span2">
-            Feb 12, 2013
-        </div>
-        <div class="contents span12">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit fusce vel sapien elit in malesuada semper mi, id sollicitudin urna fermentum ut fusce varius nisl ac ipsum gravida vel pretium tellus.
-        </div>
-        <div class="toolbar span12">
-            <button class="btn btn-primary reply-button">Reply</button>
-        </div>
-        <div class="replies span12"></div>
-    </div>
-</div>
-
-@foreach (var topic in Model)
-{
-    <div>@topic.Title</div>
-    <div>-- @topic.Body</div>
+@section Scripts {
+    <script src="~/js/home-index.js"></script>
 }
+
+<div data-ng-controller="homeIndexController">
+    <div class="message-header">
+        <h1>Message Board</h1>
+        <p class="lead">Latest Messages...</p>
+        <div>Message Count: {{ data.length }}</div>
+    </div>
+
+    <div class="progress progress-striped active" data-ng-show="isBusy">
+        <div class="bar" style="width: 100%;"></div>
+    </div>
+
+    <div class="messages">
+        <div class="message row" data-ng-repeat="i in data">
+            <div class="title span10">
+                <a data-ng-href="#/message/{{ i.id }}">{{ i.title }}</a>
+            </div>
+            <div class="date span2">
+                {{ i.created | date:"medium" }}
+            </div>
+            <div class="contents span12">
+                {{ i.body }}
+            </div>
+            <div class="span12 toolbar">
+                <button class="btn btn-primary">Reply</button>
+            </div>
+            <div class="replies span12">
+                <div class="reply" data-ng-repeat="r in i.replies">
+                    <div class="created pull-right">
+                        {{ r.created | date:"medium" }}
+                    </div>
+                    <div class="content">
+                        {{ r.body }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
