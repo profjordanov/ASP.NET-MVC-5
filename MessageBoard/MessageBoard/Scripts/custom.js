@@ -1,5 +1,7 @@
 /* Sharepanel */
 
+var x = 100;
+
 $(document).ready(function(){
 	$(".open").click(function(){
 		$(".sharepanel").slideToggle('1000',"swing");	

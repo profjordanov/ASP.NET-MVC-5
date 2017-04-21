@@ -2,33 +2,32 @@
 using System.Collections.Generic;
 using System.Data.Entity.Migrations;
 using System.Linq;
-using System.Web;
-using MessageBoard.Models;
+using System.Text;
 
 namespace MessageBoard.Data
 {
-    public class MessageBoardMigrationsConfiguration
+  public class MessageBoardMigrationsConfiguration
     : DbMigrationsConfiguration<MessageBoardContext>
+  {
+    public MessageBoardMigrationsConfiguration()
     {
-        public MessageBoardMigrationsConfiguration()
-        {
-            this.AutomaticMigrationDataLossAllowed = true;
-            this.AutomaticMigrationsEnabled = true;
-        }
+      this.AutomaticMigrationDataLossAllowed = true;
+      this.AutomaticMigrationsEnabled = true;
+    }
 
-        protected override void Seed(MessageBoardContext context)
-        {
-            base.Seed(context);
+    protected override void Seed(MessageBoardContext context)
+    {
+      base.Seed(context);
 
 #if DEBUG
-            if (context.Topics.Count() == 0)
-            {
-                var topic = new Topic()
-                {
-                    Title = "I love MVC",
-                    Created = DateTime.Now,
-                    Body = "I love ASP.NET MVC and I want everyone to know it",
-                    Replies = new List<Reply>()
+      if (context.Topics.Count() == 0)
+      {
+        var topic = new Topic()
+        {
+          Title = "I love MVC",
+          Created = DateTime.Now,
+          Body = "I love ASP.NET MVC and I want everyone to know it",
+          Replies = new List<Reply>()
           {
             new Reply()
             {
@@ -46,29 +45,29 @@ namespace MessageBoard.Data
                Created = DateTime.Now
             },
           }
-                };
+        };
 
-                context.Topics.Add(topic);
+        context.Topics.Add(topic);
 
-                var anotherTopic = new Topic()
-                {
-                    Title = "I like Java too!",
-                    Created = DateTime.Now,
-                    Body = "Java  is popular"
-                };
+        var anotherTopic = new Topic()
+        {
+          Title = "I like Ruby too!",
+          Created = DateTime.Now,
+          Body = "Ruby on Rails is popular"
+        };
 
-                context.Topics.Add(anotherTopic);
+        context.Topics.Add(anotherTopic);
 
-                try
-                {
-                    context.SaveChanges();
-                }
-                catch (Exception ex)
-                {
-                    var msg = ex.Message;
-                }
-            }
-#endif
+        try
+        {
+          context.SaveChanges();
         }
+        catch (Exception ex)
+        {
+          var msg = ex.Message;
+        }
+      }
+#endif
     }
+  }
 }

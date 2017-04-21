@@ -1,82 +1,72 @@
-[assembly: WebActivatorEx.PreApplicationStartMethod(typeof(MessageBoard.App_Start.NinjectWebCommon), "Start")]
-[assembly: WebActivatorEx.ApplicationShutdownMethodAttribute(typeof(MessageBoard.App_Start.NinjectWebCommon), "Stop")]
+[assembly: WebActivator.PreApplicationStartMethod(typeof(MessageBoard.App_Start.NinjectWebCommon), "Start")]
+[assembly: WebActivator.ApplicationShutdownMethodAttribute(typeof(MessageBoard.App_Start.NinjectWebCommon), "Stop")]
 
 namespace MessageBoard.App_Start
 {
-    using System;
-    using System.Web;
+  using System;
+  using System.Web;
+  using System.Web.Http;
+  using MessageBoard.Data;
+  using MessageBoard.Services;
+  using Microsoft.Web.Infrastructure.DynamicModuleHelper;
+  using Ninject;
+  using Ninject.Web.Common;
+  using WebApiContrib.IoC.Ninject;
 
-    using Microsoft.Web.Infrastructure.DynamicModuleHelper;
+  public static class NinjectWebCommon
+  {
+    private static readonly Bootstrapper bootstrapper = new Bootstrapper();
 
-    using Ninject;
-    using Ninject.Web.Common;
-    using Services;
-    using MessageBoard.Data;
-    using System.Web.Http;
-    using WebApiContrib.IoC.Ninject;
-
-    public static class NinjectWebCommon 
+    /// <summary>
+    /// Starts the application
+    /// </summary>
+    public static void Start()
     {
-        private static readonly Bootstrapper bootstrapper = new Bootstrapper();
+      DynamicModuleUtility.RegisterModule(typeof(OnePerRequestHttpModule));
+      DynamicModuleUtility.RegisterModule(typeof(NinjectHttpModule));
+      bootstrapper.Initialize(CreateKernel);
+    }
 
-        /// <summary>
-        /// Starts the application
-        /// </summary>
-        public static void Start() 
-        {
-            DynamicModuleUtility.RegisterModule(typeof(OnePerRequestHttpModule));
-            DynamicModuleUtility.RegisterModule(typeof(NinjectHttpModule));
-            bootstrapper.Initialize(CreateKernel);
-        }
-        
-        /// <summary>
-        /// Stops the application.
-        /// </summary>
-        public static void Stop()
-        {
-            bootstrapper.ShutDown();
-        }
-        
-        /// <summary>
-        /// Creates the kernel that will manage your application.
-        /// </summary>
-        /// <returns>The created kernel.</returns>
-        private static IKernel CreateKernel()
-        {
-            var kernel = new StandardKernel();
-            try
-            {
-                kernel.Bind<Func<IKernel>>().ToMethod(ctx => () => new Bootstrapper().Kernel);
-                kernel.Bind<IHttpModule>().To<HttpApplicationInitializationHttpModule>();
+    /// <summary>
+    /// Stops the application.
+    /// </summary>
+    public static void Stop()
+    {
+      bootstrapper.ShutDown();
+    }
 
-                RegisterServices(kernel);
+    /// <summary>
+    /// Creates the kernel that will manage your application.
+    /// </summary>
+    /// <returns>The created kernel.</returns>
+    private static IKernel CreateKernel()
+    {
+      var kernel = new StandardKernel();
+      kernel.Bind<Func<IKernel>>().ToMethod(ctx => () => new Bootstrapper().Kernel);
+      kernel.Bind<IHttpModule>().To<HttpApplicationInitializationHttpModule>();
 
-                GlobalConfiguration.Configuration.DependencyResolver =
+      RegisterServices(kernel);
+
+      GlobalConfiguration.Configuration.DependencyResolver =
         new NinjectResolver(kernel);
 
-                return kernel;
-            }
-            catch
-            {
-                kernel.Dispose();
-                throw;
-            }
-        }
+      return kernel;
+    }
 
-        /// <summary>
-        /// Load your modules or register your services here!
-        /// </summary>
-        /// <param name="kernel">The kernel.</param>
-        private static void RegisterServices(IKernel kernel)
-        {
-            #if DEBUG
-                        kernel.Bind<IMailService>().To<MockMailService>().InRequestScope();
+    /// <summary>
+    /// Load your modules or register your services here!
+    /// </summary>
+    /// <param name="kernel">The kernel.</param>
+    private static void RegisterServices(IKernel kernel)
+    {
+#if DEBUG
+      kernel.Bind<IMailService>().To<MockMailService>().InRequestScope();
 #else
-                  kernel.Bind<IMailService>().To<MailService>().InRequestScope();
+      kernel.Bind<IMailService>().To<MailService>().InRequestScope();
 #endif
 
-            kernel.Bind<MessageBoardContext>().To<MessageBoardContext>().InRequestScope();
-            kernel.Bind<IMessageBoardRepository>().To<MessageBoardRepository>().InRequestScope();
-        }
+      kernel.Bind<MessageBoardContext>().To<MessageBoardContext>().InRequestScope();
+      kernel.Bind<IMessageBoardRepository>().To<MessageBoardRepository>().InRequestScope();
     }
+  }
 }

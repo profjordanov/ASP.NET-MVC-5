@@ -1,111 +1,202 @@
-C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\roslyn\csc.exe
-C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\roslyn\Microsoft.CodeAnalysis.dll
-C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\roslyn\Microsoft.CSharp.Core.targets
-C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\roslyn\Microsoft.VisualBasic.Core.targets
-C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\roslyn\System.Collections.Immutable.dll
-C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\roslyn\System.Reflection.Metadata.dll
-C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\roslyn\vbc.exe
-C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\roslyn\VBCSCompiler.exe
-C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\roslyn\VBCSCompiler.exe.config
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\MessageBoard.dll.config
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\MessageBoard.dll
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\MessageBoard.pdb
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\Antlr3.Runtime.dll
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\DotNetOpenAuth.AspNet.dll
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\DotNetOpenAuth.Core.dll
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\DotNetOpenAuth.OAuth.Consumer.dll
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\DotNetOpenAuth.OAuth.dll
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\DotNetOpenAuth.OpenId.dll
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\EntityFramework.dll
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\Microsoft.Data.Edm.dll
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\Microsoft.Data.OData.dll
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\Microsoft.Web.Infrastructure.dll
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\Microsoft.Web.WebPages.OAuth.dll
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\Newtonsoft.Json.dll
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\Ninject.dll
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\Ninject.Web.Common.dll
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\Ninject.Web.Mvc.dll
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\System.Net.Http.Formatting.dll
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\System.Spatial.dll
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\System.Web.Helpers.dll
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\System.Web.Http.dll
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\System.Web.Http.OData.dll
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\System.Web.Http.WebHost.dll
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\System.Web.Mvc.dll
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\System.Web.Optimization.dll
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\System.Web.Razor.dll
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\System.Web.WebPages.Deployment.dll
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\System.Web.WebPages.dll
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\System.Web.WebPages.Razor.dll
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\WebActivator.dll
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\WebApiContrib.IoC.Ninject.dll
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\WebGrease.dll
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\WebMatrix.Data.dll
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\WebMatrix.WebData.dll
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\Org.Mentalis.Security.Cryptography.dll
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\Mono.Math.dll
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\Newtonsoft.Json.xml
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\Ninject.pdb
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\Ninject.xml
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\Ninject.Web.Common.pdb
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\Ninject.Web.Common.xml
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\Ninject.Web.Mvc.pdb
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\Ninject.Web.Mvc.xml
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\EntityFramework.xml
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\System.Net.Http.Formatting.xml
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\System.Web.Helpers.xml
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\System.Web.Http.xml
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\System.Web.Http.WebHost.xml
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\System.Web.Mvc.xml
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\System.Web.Razor.xml
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\System.Web.WebPages.xml
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\System.Web.WebPages.Deployment.xml
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\System.Web.WebPages.Razor.xml
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\WebMatrix.Data.xml
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\Microsoft.Web.WebPages.OAuth.xml
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\WebMatrix.WebData.xml
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\DotNetOpenAuth.AspNet.xml
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\DotNetOpenAuth.Core.xml
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\DotNetOpenAuth.OAuth.Consumer.xml
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\DotNetOpenAuth.OAuth.xml
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\DotNetOpenAuth.OpenId.xml
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\System.Web.Http.OData.xml
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\Microsoft.Data.Edm.xml
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\Microsoft.Data.OData.xml
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\System.Spatial.xml
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\Org.Mentalis.Security.Cryptography.xml
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\Mono.Math.xml
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\de\Microsoft.Data.Edm.resources.dll
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\es\Microsoft.Data.Edm.resources.dll
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\fr\Microsoft.Data.Edm.resources.dll
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\it\Microsoft.Data.Edm.resources.dll
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\ja\Microsoft.Data.Edm.resources.dll
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\ko\Microsoft.Data.Edm.resources.dll
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\ru\Microsoft.Data.Edm.resources.dll
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\de\Microsoft.Data.OData.resources.dll
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\es\Microsoft.Data.OData.resources.dll
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\fr\Microsoft.Data.OData.resources.dll
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\it\Microsoft.Data.OData.resources.dll
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\ja\Microsoft.Data.OData.resources.dll
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\ko\Microsoft.Data.OData.resources.dll
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\ru\Microsoft.Data.OData.resources.dll
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\de\System.Spatial.resources.dll
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\es\System.Spatial.resources.dll
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\fr\System.Spatial.resources.dll
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\it\System.Spatial.resources.dll
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\ja\System.Spatial.resources.dll
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\ko\System.Spatial.resources.dll
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\ru\System.Spatial.resources.dll
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\zh-Hans\System.Spatial.resources.dll
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\bin\zh-Hant\System.Spatial.resources.dll
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\obj\Debug\MessageBoard.dll
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\obj\Debug\MessageBoard.pdb
+D:\PluralSight\Building a Site with Bootstrap, AngularJS, ASP.NET, EF and Azure\7-site-building-m6-exercise-files\MessageBoard\obj\Debug\MessageBoard.csprojResolveAssemblyReference.cache
 C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\MessageBoard.dll.config
 C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\MessageBoard.dll
 C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\MessageBoard.pdb
 C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\Antlr3.Runtime.dll
-C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\EntityFramework.dll
-C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\EntityFramework.SqlServer.dll
-C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\Microsoft.AspNet.Identity.Core.dll
-C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\Microsoft.AspNet.Identity.EntityFramework.dll
-C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\Microsoft.AspNet.Identity.Owin.dll
-C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\Microsoft.Owin.dll
-C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\Microsoft.Owin.Host.SystemWeb.dll
-C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\Microsoft.Owin.Security.Cookies.dll
-C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\Microsoft.Owin.Security.dll
-C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\Microsoft.Owin.Security.Facebook.dll
-C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\Microsoft.Owin.Security.Google.dll
-C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
-C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\Microsoft.Owin.Security.OAuth.dll
-C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\Microsoft.Owin.Security.Twitter.dll
-C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\Microsoft.Web.Infrastructure.dll
-C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\Newtonsoft.Json.dll
-C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\Owin.dll
-C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\System.Web.Helpers.dll
-C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\System.Web.Mvc.dll
-C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\System.Web.Optimization.dll
-C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\System.Web.Razor.dll
-C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\System.Web.WebPages.Deployment.dll
-C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\System.Web.WebPages.dll
-C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\System.Web.WebPages.Razor.dll
-C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\WebGrease.dll
-C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\System.Web.Helpers.xml
-C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\System.Web.Mvc.xml
-C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\System.Web.Optimization.xml
-C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\System.Web.Razor.xml
-C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\System.Web.WebPages.xml
-C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\System.Web.WebPages.Deployment.xml
-C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\System.Web.WebPages.Razor.xml
-C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\Antlr3.Runtime.pdb
-C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\Newtonsoft.Json.xml
-C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\EntityFramework.xml
-C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\EntityFramework.SqlServer.xml
-C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\Microsoft.AspNet.Identity.Core.xml
-C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\Microsoft.AspNet.Identity.Owin.xml
-C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\Microsoft.AspNet.Identity.EntityFramework.xml
-C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\Microsoft.Owin.xml
-C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\Microsoft.Owin.Host.SystemWeb.xml
-C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\Microsoft.Owin.Security.xml
-C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\Microsoft.Owin.Security.Facebook.xml
-C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\Microsoft.Owin.Security.Cookies.xml
-C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\Microsoft.Owin.Security.OAuth.xml
-C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\Microsoft.Owin.Security.Google.xml
-C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\Microsoft.Owin.Security.Twitter.xml
-C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\obj\Debug\MessageBoard.dll
-C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\obj\Debug\MessageBoard.pdb
-C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\Ninject.dll
-C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\Ninject.Web.Common.dll
-C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\Ninject.Web.Mvc.dll
-C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\WebActivatorEx.dll
-C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\Ninject.xml
-C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\Ninject.Web.Common.xml
-C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\Ninject.Web.Mvc.xml
 C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\DotNetOpenAuth.AspNet.dll
 C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\DotNetOpenAuth.Core.dll
 C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\DotNetOpenAuth.OAuth.Consumer.dll
 C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\DotNetOpenAuth.OAuth.dll
 C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\DotNetOpenAuth.OpenId.dll
 C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\EntityFramework.dll
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\Microsoft.Data.Edm.dll
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\Microsoft.Data.OData.dll
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
 C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\Microsoft.Web.WebPages.OAuth.dll
-C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\System.Net.Http.dll
-C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\System.Net.Http.WebRequest.dll
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\Newtonsoft.Json.dll
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\Ninject.dll
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\Ninject.Web.Common.dll
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\Ninject.Web.Mvc.dll
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\System.Net.Http.Formatting.dll
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\System.Spatial.dll
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\System.Web.Helpers.dll
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\System.Web.Http.dll
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\System.Web.Http.OData.dll
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\System.Web.Http.WebHost.dll
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\System.Web.Mvc.dll
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\System.Web.Optimization.dll
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\System.Web.Razor.dll
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\System.Web.WebPages.dll
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\System.Web.WebPages.Razor.dll
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\WebActivator.dll
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\WebApiContrib.IoC.Ninject.dll
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\WebGrease.dll
 C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\WebMatrix.Data.dll
 C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\WebMatrix.WebData.dll
 C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\Org.Mentalis.Security.Cryptography.dll
 C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\Mono.Math.dll
-C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\DotNetOpenAuth.AspNet.xml
-C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\DotNetOpenAuth.Core.xml
-C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\DotNetOpenAuth.OAuth.xml
-C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\DotNetOpenAuth.OAuth.Consumer.xml
-C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\DotNetOpenAuth.OpenId.xml
-C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
-C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\Microsoft.Web.WebPages.OAuth.xml
-C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\System.Net.Http.xml
-C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\System.Net.Http.WebRequest.xml
-C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\WebMatrix.WebData.xml
-C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\Org.Mentalis.Security.Cryptography.xml
-C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\Mono.Math.xml
-C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\WebMatrix.Data.xml
-C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\obj\Debug\MessageBoard.Data.Initial.resources
-C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\obj\Debug\MessageBoard.csproj.GenerateResource.Cache
-C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\System.Net.Http.Formatting.dll
-C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\System.Web.Http.dll
-C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\System.Web.Http.WebHost.dll
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\Newtonsoft.Json.xml
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\Ninject.pdb
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\Ninject.xml
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\Ninject.Web.Common.pdb
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\Ninject.Web.Common.xml
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\Ninject.Web.Mvc.pdb
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\Ninject.Web.Mvc.xml
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\EntityFramework.xml
 C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\System.Net.Http.Formatting.xml
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\System.Web.Helpers.xml
 C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\System.Web.Http.xml
 C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\System.Web.Http.WebHost.xml
-C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\WebApiContrib.IoC.Ninject.dll
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\System.Web.Mvc.xml
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\System.Web.Razor.xml
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\System.Web.WebPages.xml
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\System.Web.WebPages.Razor.xml
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\WebMatrix.Data.xml
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\Microsoft.Web.WebPages.OAuth.xml
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\WebMatrix.WebData.xml
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\DotNetOpenAuth.Core.xml
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\System.Web.Http.OData.xml
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\Microsoft.Data.Edm.xml
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\Microsoft.Data.OData.xml
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\System.Spatial.xml
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\Org.Mentalis.Security.Cryptography.xml
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\Mono.Math.xml
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\de\Microsoft.Data.Edm.resources.dll
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\es\Microsoft.Data.Edm.resources.dll
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\it\Microsoft.Data.Edm.resources.dll
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\de\Microsoft.Data.OData.resources.dll
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\es\Microsoft.Data.OData.resources.dll
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\fr\Microsoft.Data.OData.resources.dll
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\it\Microsoft.Data.OData.resources.dll
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\ja\Microsoft.Data.OData.resources.dll
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\ko\Microsoft.Data.OData.resources.dll
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\ru\Microsoft.Data.OData.resources.dll
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\de\System.Spatial.resources.dll
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\es\System.Spatial.resources.dll
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\fr\System.Spatial.resources.dll
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\it\System.Spatial.resources.dll
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\ja\System.Spatial.resources.dll
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\ko\System.Spatial.resources.dll
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\ru\System.Spatial.resources.dll
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\zh-Hans\System.Spatial.resources.dll
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\zh-Hant\System.Spatial.resources.dll
 C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\obj\Debug\MessageBoard.csprojResolveAssemblyReference.cache
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\obj\Debug\MessageBoard.dll
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\obj\Debug\MessageBoard.pdb

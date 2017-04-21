@@ -1,9 +1,14 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
-MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessageBoard", "MessageBoard\MessageBoard.csproj", "{AB05E9AC-2D02-4D6D-9C7E-991B0DC15FC0}"
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessageBoard", "MessageBoard\MessageBoard.csproj", "{9C0A3EEA-DCB1-4C2C-9C00-C2AC79F07A11}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{D3DD31C5-CAA2-4602-B618-E2C8944165A7}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +16,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{AB05E9AC-2D02-4D6D-9C7E-991B0DC15FC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AB05E9AC-2D02-4D6D-9C7E-991B0DC15FC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AB05E9AC-2D02-4D6D-9C7E-991B0DC15FC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AB05E9AC-2D02-4D6D-9C7E-991B0DC15FC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C0A3EEA-DCB1-4C2C-9C00-C2AC79F07A11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C0A3EEA-DCB1-4C2C-9C00-C2AC79F07A11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C0A3EEA-DCB1-4C2C-9C00-C2AC79F07A11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C0A3EEA-DCB1-4C2C-9C00-C2AC79F07A11}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
