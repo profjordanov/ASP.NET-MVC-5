@@ -333,6 +333,9 @@
     <Content Include="Content\Template\font-awesome\fontawesome-webfont.woff" />
     <None Include="Scripts\jquery-2.0.2.intellisense.js" />
     <Content Include="js\home-index.js" />
+    <Content Include="js\home-index.min.js">
+      <DependentUpon>home-index.js</DependentUpon>
+    </Content>
     <Content Include="Scripts\angular-bootstrap-prettify.js" />
     <Content Include="Scripts\angular-bootstrap-prettify.min.js" />
     <Content Include="Scripts\angular-bootstrap.js" />
@@ -725,7 +728,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>0</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:4539/</IISUrl>
+          <IISUrl>http://localhost:1544/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
