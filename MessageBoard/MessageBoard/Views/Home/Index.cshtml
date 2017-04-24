@@ -1,46 +1,10 @@
 ﻿@model IEnumerable<MessageBoard.Data.Topic>
 @{
-  ViewBag.Title = "Home Page";
+    ViewBag.Title = "Home Page";
+    ViewBag.InitModule = "homeIndex";
 }
 @section Scripts {
-  <script src="~/js/home-index.js"></script>
+    <script src="~/js/home-index.js"></script>
 }
 
-<div data-ng-controller="homeIndexController">
-  <div class="message-header">
-    <h1>Message Board</h1>
-    <p class="lead">Latest Messages...</p>
-    <div>Message Count: {{ data.length }}</div>
-  </div>
-
-  <div class="progress progress-striped active" data-ng-show="isBusy">
-    <div class="bar" style="width: 100%;"></div>
-  </div>
-
-  <div class="messages">
-    <div class="message row" data-ng-repeat="i in data">
-      <div class="title span10">
-        <a data-ng-href="#/message/{{ i.id }}">{{ i.title }}</a>
-      </div>
-      <div class="date span2">
-        {{ i.created | date:"medium" }}
-      </div>
-      <div class="contents span12">
-        {{ i.body }}
-      </div>
-      <div class="span12 toolbar">
-        <button class="btn btn-primary">Reply</button>
-      </div>
-      <div class="replies span12">
-        <div class="reply" data-ng-repeat="r in i.replies">
-          <div class="created pull-right">
-            {{ r.created | date:"medium" }}
-          </div>
-          <div class="content">
-            {{ r.body }}
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+<div data-ng-view=""></div>
