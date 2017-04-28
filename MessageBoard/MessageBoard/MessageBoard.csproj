@@ -336,6 +336,7 @@
     <Content Include="js\home-index.min.js">
       <DependentUpon>home-index.js</DependentUpon>
     </Content>
+    <Content Include="js\myapp.js" />
     <Content Include="Scripts\angular-bootstrap-prettify.js" />
     <Content Include="Scripts\angular-bootstrap-prettify.min.js" />
     <Content Include="Scripts\angular-bootstrap.js" />
