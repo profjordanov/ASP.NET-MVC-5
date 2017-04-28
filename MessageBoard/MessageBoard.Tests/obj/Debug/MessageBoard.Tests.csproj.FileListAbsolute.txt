@@ -60,3 +60,5 @@ C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\Me
 C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard.Tests\obj\Debug\MessageBoard.Tests.csprojResolveAssemblyReference.cache
 C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard.Tests\obj\Debug\MessageBoard.Tests.dll
 C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard.Tests\obj\Debug\MessageBoard.Tests.pdb
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard.Tests\bin\Debug\AutoMapper.dll
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard.Tests\bin\Debug\AutoMapper.xml

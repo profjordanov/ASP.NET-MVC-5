@@ -199,3 +199,5 @@ C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\Me
 C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\zh-Hant\System.Spatial.resources.dll
 C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\obj\Debug\MessageBoard.dll
 C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\obj\Debug\MessageBoard.pdb
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\AutoMapper.dll
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\MessageBoard\MessageBoard\bin\AutoMapper.xml

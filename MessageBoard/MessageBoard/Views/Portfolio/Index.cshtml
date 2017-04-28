@@ -1,0 +1,55 @@
+﻿@model IEnumerable<MessageBoard.Models.PictureVM>
+@{
+    ViewBag.Title = "Index";
+}
+<div class="main">
+    <div class="container">
+        <div class="row">
+            <div class="span12 hidden-desktop">
+                <div class="padd"><div class="navis"></div></div>
+            </div>
+            <div class="span12">
+                <div class="whity content">
+                    <!-- Content should be encloased inside div with the class "posts" -->
+                    <div class="posts">
+                        <!-- Each entry should be enclosed inside div with the class "entry" -->
+                        <div class="entry">
+                            <div class="padd">
+                                <!-- Portfolio title -->
+                                <h2>Portfolio</h2>
+                                <!-- Portfolio para -->
+                                <!-- Add class "alignleft" to image to align left. -->
+                                <p>Fusce imperdiet, risus eget viverra faucibus, diam mi vestibulum libero, ut vestibulum tellus magna nec enim. Nunc dapibus varius interdum. Phasellus at lorem ut lectus fermentum convallis. Sed diam nisi, pulvinar vitae molestie hendrerit, venenatis eget mauris. Integer porta erat ac eros porta ultrices. Proin porttitor eros a ante molestie gravida commodo dui adipiscing. <a href="#">Morbi dictum nibh gravida</a> mi pretium dapibus. Nullam in est urna. </p>
+                                <p>
+                                    <!-- Add filter names inside "data-filter". For example ".web-design", ".seo", etc., Filter names are used to filter the below images. -->
+                                    <ul id="filters">
+                                        <li><a href="#" data-filter="*" class="label label-info">All</a></li>
+                                        <li><a href="#" data-filter=".one" class="label label-info">One</a></li>
+                                        <li><a href="#" data-filter=".two" class="label label-info">Two</a></li>
+                                        <li><a href="#" data-filter=".three" class="label label-info">Three</a></li>
+                                        <li><a href="#" data-filter=".four" class="label label-info">Four</a></li>
+                                        <li><a href="#" data-filter=".five" class="label label-info">Five</a></li>
+                                    </ul>
+                                </p>
+
+                                <div id="portfolio-big">
+                                    <!-- Add the above used filter names inside div tag. You can add more than one filter names. For image lightbox you need to include "a" tag pointing to image link, along with the class "prettyphoto".-->
+                                    
+                                    
+                                    @foreach (var pic in Model)
+                                    {
+                                        <div class="element five two"><a href="@pic.ImageThumbnail" class="prettyphoto"><img src="@pic.ImageThumbnail" alt="" /></a></div>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mobily hidden-desktop">
+
+            </div>
+        </div>
+    </div>
+</div> 

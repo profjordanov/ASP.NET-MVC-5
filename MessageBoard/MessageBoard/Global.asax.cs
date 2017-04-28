@@ -6,6 +6,9 @@ using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
+using AutoMapper;
+using MessageBoard.Data;
+using MessageBoard.Models;
 
 namespace MessageBoard
 {
@@ -23,6 +26,14 @@ namespace MessageBoard
       RouteConfig.RegisterRoutes(RouteTable.Routes);
       BundleConfig.RegisterBundles(BundleTable.Bundles);
       AuthConfig.RegisterAuth();
+      ConfigureMapper();
     }
-  }
+        private static void ConfigureMapper()
+        {
+            Mapper.Initialize(expression =>
+            {
+                expression.CreateMap<Picture, PictureVM>();
+            });
+        }
+    }
 }
