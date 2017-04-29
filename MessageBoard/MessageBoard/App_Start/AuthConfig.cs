@@ -22,9 +22,9 @@ namespace MessageBoard
       //    consumerKey: "",
       //    consumerSecret: "");
 
-      //OAuthWebSecurity.RegisterFacebookClient(
-      //    appId: "",
-      //    appSecret: "");
+     OAuthWebSecurity.RegisterFacebookClient(
+         appId: "457844911228381",
+         appSecret: "4f8f856e447ad850a3b11dc4b0c230dc");
 
       OAuthWebSecurity.RegisterGoogleClient();
       OAuthWebSecurity.RegisterYahooClient();
