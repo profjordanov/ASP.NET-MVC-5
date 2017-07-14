@@ -1,0 +1,71 @@
+﻿@model PlaySchool.Models.VMs.Game.QuizViewModel
+
+@{
+    ViewBag.Title = "Quiz";
+}
+<div class="row"> <h1>Quiz</h1></div>
+<div class="row">
+    <div class="col-md-5">
+        @Html.ActionLink("Back to Game Explorer", "Explore", "Game", null, new { @class = "btn btn-info" })
+    </div>
+</div>
+<hr />
+@if (Model.IsPlayed)
+{
+    if (ViewBag.InPost!=null && ViewBag.InPost)
+    {
+        if (ViewBag.AreCorrect)
+        {
+            <p class="alert alert-success">You earned 5 points! Congratz.</p>
+        }
+        else
+        {
+            <p class="alert alert-danger">You answered wrong! Sorry :(.</p>
+        }
+    }
+    else
+    {
+        <h4>You already played this quiz!</h4>
+    }
+}
+else
+{
+    using (Html.BeginForm("Quiz", "Game", FormMethod.Post, new {@class = "form-horizontal", role = "form"}))
+    {
+        @Html.AntiForgeryToken()
+        @Html.ValidationSummary()
+        @Html.HiddenFor(model => model.QuizId)
+        for (int i = 0; i < Model.Questions.Count; i++)
+        {
+            <div class="form-group">
+                @Html.LabelFor(m => m.Questions[i].QuestionTitle, new {@class = "col-md-2 control-label"})
+                <div class="col-md-10">
+                    @Html.DisplayFor(m => m.Questions[i].QuestionTitle, new {@class = "form-control"})
+                </div>
+            </div>
+            if (Model.Questions[i].QuestionTip != null)
+            {
+                <div class="form-group">
+                    @Html.LabelFor(m => m.Questions[i].QuestionTip, new {@class = "col-md-2 control-label"})
+                    <div class="col-md-10">
+                        @Html.DisplayFor(m => m.Questions[i].QuestionTip, new {@class = "form-control"})
+                    </div>
+                </div>
+            }
+            <div class="form-group">
+                @Html.LabelFor(m => m.Questions[i].Answer, new {@class = "col-md-2 control-label"})
+                <div class="col-md-10">
+                    @Html.TextBoxFor(m => m.Questions[i].Answer, new {@class = "form-control"})
+                </div>
+            </div>
+            <hr />
+        }
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" class="btn btn-default" value="Send Answers" />
+            </div>
+        </div>
+    }
+}
+
+

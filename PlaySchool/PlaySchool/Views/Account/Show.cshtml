@@ -1,0 +1,34 @@
+﻿@using PlaySchool.Helpers
+@model PlaySchool.Models.VMs.Account.ProfileViewModel
+@if (Model == null)
+{
+    <p class="alert alert-danger">User with this username doesn't exist!</p>
+}
+else { 
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-6">
+                <div class="well well-sm">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4">
+                            @Html.ProfileImage(@Model.ProfilePictureName)
+                            </div>
+                        <div class="col-sm-6 col-md-8">
+                            <h4>
+                                @Model.FirstName @Model.LastName
+                            </h4>
+                            <p>
+                                <i class="glyphicon glyphicon-envelope"></i> @Model.Email
+                                <br/>
+                                <i class="glyphicon glyphicon-user"></i> @Model.Username
+                                <br/>
+                                <i class="glyphicon glyphicon-star"></i> @Model.Points (Points)
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}

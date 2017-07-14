@@ -1,0 +1,32 @@
+﻿@model PlaySchool.Models.VMs.Account.AccountSearchViewModel
+
+@{
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Search for account</title>
+</head>
+<body>
+    <h2>Search for account</h2>
+    <hr />
+    @using (Html.BeginForm("Search", "Account", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+    {
+        @Html.AntiForgeryToken()
+        @Html.ValidationSummary()
+        <div class="form-group">
+            @Html.LabelFor(vm=>vm.Username, new { @class = "col-md-2 control-label" })
+            <div class="col-md-10">
+                @Html.TextBoxFor( vm=>vm.Username,new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Search username" class="btn btn-default" />
+            </div>
+        </div>
+    }
+</body>
+</html>

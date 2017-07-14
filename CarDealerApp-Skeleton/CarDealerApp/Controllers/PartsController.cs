@@ -63,7 +63,7 @@ namespace CarDealerApp.Controllers
             if (this.ModelState.IsValid)
             {
                 this.service.DeletePart(bind);
-                return this.RedirectToAction("All");
+                return this.Redirect("/comments/All");
             }
             DeletePartVm vm = this.service.GetDeleteVm(bind.PartId);
             return this.View(vm);

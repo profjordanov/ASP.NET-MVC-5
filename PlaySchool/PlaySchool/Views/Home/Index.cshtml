@@ -1,0 +1,29 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>PlaySchool</h1>
+    <p class="lead">PlaySchool is new platform developed by Alhimika Labs. Study while playing or playing while studying?</p>
+    <p>@Html.ActionLink("Learn more »", "About", null, new { @class = "btn btn-primary btn-lg" })</p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Search other Players</h2>
+        <p>
+            You can search other players. View their statistic and more! Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+        </p>
+        @Html.ActionLink("Search »", "Search", "Account", null, new { @class = "btn btn-default" })
+    </div>
+    <div class="col-md-4">
+        <h2>Customize your profile</h2>
+        <p>You can customize your profile! Change your profile picture, name or password! Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. </p>
+        @Html.ActionLink("Try it »", "Index", "Manage", null, new { @class = "btn btn-default" })
+    </div>
+    <div class="col-md-4">
+        <h2>Explore games</h2>
+        <p>You can Explore some games and play them. After that if you want to check how much you learned during playing you can solve some <strong>quizzes</strong> and earn points. Do not hesitate soon we will implement new features specially for people with high points!</p>
+        @Html.ActionLink("Explore »", "Explore", "Game", null, new { @class = "btn btn-default" })
+    </div>
+</div>

@@ -1,0 +1,56 @@
+﻿@using PlaySchool.Controllers
+@using PlaySchool.Models
+@model PlaySchool.Models.VMs.Game.ShowGameViewModel
+
+@{
+}
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>title</title>
+</head>
+<body>
+    <div class="row"> <h1>Games</h1></div>
+    <div class="row">
+        <div class="col-md-5">
+            @Html.ActionLink("Back to Game Explorer", "Explore", "Game", null, new { @class = "btn btn-info" })
+        </div>
+        <p class="h2 col-md-7">@Model.Name</p>
+    </div>
+    <hr />
+    <div class="row">
+        <div class="col-md-5">
+            @if (Model.Quiz != null)
+            {
+                <div class="row">
+                    @Html.ActionLink("Go To Quiz", "Quiz", "Game", new { id = @Model.Quiz.QuizId }, new { @class = "btn btn-info" })
+                </div>
+            }
+            <p>
+                <div class="row">
+                    @Html.LabelFor(m => m.Description) :
+                    @Html.ValueFor(vm => vm.Description)
+                </div>
+                <div class="row">
+                    @Html.LabelFor(m => m.NumberPlayed) :
+                    @Html.ValueFor(m => m.NumberPlayed)
+                </div>
+                <div class="row">
+                    @Html.LabelFor(m => m.Creator) :
+                    @Html.ValueFor(m => m.Creator.UserName)
+                </div>
+            </p>
+        </div>
+        <div id="breakout" class="col-md-4">
+        </div>
+    </div>
+</body>
+</html>
+@section scripts
+{
+    @Scripts.Render(@Constants.PhaserJsFrameworkUrl)
+    @Scripts.Render(@Model.JsUrl)
+}

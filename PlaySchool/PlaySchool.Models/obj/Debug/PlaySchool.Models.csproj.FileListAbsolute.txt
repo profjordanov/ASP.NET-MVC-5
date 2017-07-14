@@ -1,0 +1,64 @@
+c:\users\sasho\documents\visual studio 2015\Projects\PlaySchool\PlaySchool.Models\bin\Debug\PlaySchool.Models.dll.config
+c:\users\sasho\documents\visual studio 2015\Projects\PlaySchool\PlaySchool.Models\bin\Debug\PlaySchool.Models.dll
+c:\users\sasho\documents\visual studio 2015\Projects\PlaySchool\PlaySchool.Models\bin\Debug\PlaySchool.Models.pdb
+c:\users\sasho\documents\visual studio 2015\Projects\PlaySchool\PlaySchool.Models\bin\Debug\EntityFramework.dll
+c:\users\sasho\documents\visual studio 2015\Projects\PlaySchool\PlaySchool.Models\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\sasho\documents\visual studio 2015\Projects\PlaySchool\PlaySchool.Models\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+c:\users\sasho\documents\visual studio 2015\Projects\PlaySchool\PlaySchool.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+c:\users\sasho\documents\visual studio 2015\Projects\PlaySchool\PlaySchool.Models\bin\Debug\Microsoft.Owin.dll
+c:\users\sasho\documents\visual studio 2015\Projects\PlaySchool\PlaySchool.Models\bin\Debug\Microsoft.Web.Infrastructure.dll
+c:\users\sasho\documents\visual studio 2015\Projects\PlaySchool\PlaySchool.Models\bin\Debug\Owin.dll
+c:\users\sasho\documents\visual studio 2015\Projects\PlaySchool\PlaySchool.Models\bin\Debug\System.Web.Helpers.dll
+c:\users\sasho\documents\visual studio 2015\Projects\PlaySchool\PlaySchool.Models\bin\Debug\System.Web.Mvc.dll
+c:\users\sasho\documents\visual studio 2015\Projects\PlaySchool\PlaySchool.Models\bin\Debug\System.Web.Razor.dll
+c:\users\sasho\documents\visual studio 2015\Projects\PlaySchool\PlaySchool.Models\bin\Debug\System.Web.WebPages.Deployment.dll
+c:\users\sasho\documents\visual studio 2015\Projects\PlaySchool\PlaySchool.Models\bin\Debug\System.Web.WebPages.dll
+c:\users\sasho\documents\visual studio 2015\Projects\PlaySchool\PlaySchool.Models\bin\Debug\System.Web.WebPages.Razor.dll
+c:\users\sasho\documents\visual studio 2015\Projects\PlaySchool\PlaySchool.Models\bin\Debug\EntityFramework.xml
+c:\users\sasho\documents\visual studio 2015\Projects\PlaySchool\PlaySchool.Models\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\sasho\documents\visual studio 2015\Projects\PlaySchool\PlaySchool.Models\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+c:\users\sasho\documents\visual studio 2015\Projects\PlaySchool\PlaySchool.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+c:\users\sasho\documents\visual studio 2015\Projects\PlaySchool\PlaySchool.Models\bin\Debug\Microsoft.Owin.xml
+c:\users\sasho\documents\visual studio 2015\Projects\PlaySchool\PlaySchool.Models\bin\Debug\System.Web.Helpers.xml
+c:\users\sasho\documents\visual studio 2015\Projects\PlaySchool\PlaySchool.Models\bin\Debug\System.Web.Mvc.xml
+c:\users\sasho\documents\visual studio 2015\Projects\PlaySchool\PlaySchool.Models\bin\Debug\System.Web.Razor.xml
+c:\users\sasho\documents\visual studio 2015\Projects\PlaySchool\PlaySchool.Models\bin\Debug\System.Web.WebPages.xml
+c:\users\sasho\documents\visual studio 2015\Projects\PlaySchool\PlaySchool.Models\bin\Debug\System.Web.WebPages.Deployment.xml
+c:\users\sasho\documents\visual studio 2015\Projects\PlaySchool\PlaySchool.Models\bin\Debug\System.Web.WebPages.Razor.xml
+c:\users\sasho\documents\visual studio 2015\Projects\PlaySchool\PlaySchool.Models\obj\Debug\PlaySchool.Models.csprojResolveAssemblyReference.cache
+c:\users\sasho\documents\visual studio 2015\Projects\PlaySchool\PlaySchool.Models\obj\Debug\PlaySchool.Models.dll
+c:\users\sasho\documents\visual studio 2015\Projects\PlaySchool\PlaySchool.Models\obj\Debug\PlaySchool.Models.pdb
+c:\users\sasho\documents\visual studio 2015\Projects\PlaySchool\PlaySchool.Models\bin\Debug\AutoMapper.dll
+c:\users\sasho\documents\visual studio 2015\Projects\PlaySchool\PlaySchool.Models\bin\Debug\AutoMapper.xml
+D:\Software University\C# MVC Frameworks - ASP.NET\PlaySchool\PlaySchool.Models\bin\Debug\PlaySchool.Models.dll.config
+D:\Software University\C# MVC Frameworks - ASP.NET\PlaySchool\PlaySchool.Models\bin\Debug\PlaySchool.Models.dll
+D:\Software University\C# MVC Frameworks - ASP.NET\PlaySchool\PlaySchool.Models\bin\Debug\PlaySchool.Models.pdb
+D:\Software University\C# MVC Frameworks - ASP.NET\PlaySchool\PlaySchool.Models\bin\Debug\AutoMapper.dll
+D:\Software University\C# MVC Frameworks - ASP.NET\PlaySchool\PlaySchool.Models\bin\Debug\EntityFramework.dll
+D:\Software University\C# MVC Frameworks - ASP.NET\PlaySchool\PlaySchool.Models\bin\Debug\EntityFramework.SqlServer.dll
+D:\Software University\C# MVC Frameworks - ASP.NET\PlaySchool\PlaySchool.Models\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\Software University\C# MVC Frameworks - ASP.NET\PlaySchool\PlaySchool.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Software University\C# MVC Frameworks - ASP.NET\PlaySchool\PlaySchool.Models\bin\Debug\Microsoft.Owin.dll
+D:\Software University\C# MVC Frameworks - ASP.NET\PlaySchool\PlaySchool.Models\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\Software University\C# MVC Frameworks - ASP.NET\PlaySchool\PlaySchool.Models\bin\Debug\Owin.dll
+D:\Software University\C# MVC Frameworks - ASP.NET\PlaySchool\PlaySchool.Models\bin\Debug\System.Web.Helpers.dll
+D:\Software University\C# MVC Frameworks - ASP.NET\PlaySchool\PlaySchool.Models\bin\Debug\System.Web.Mvc.dll
+D:\Software University\C# MVC Frameworks - ASP.NET\PlaySchool\PlaySchool.Models\bin\Debug\System.Web.Razor.dll
+D:\Software University\C# MVC Frameworks - ASP.NET\PlaySchool\PlaySchool.Models\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\Software University\C# MVC Frameworks - ASP.NET\PlaySchool\PlaySchool.Models\bin\Debug\System.Web.WebPages.dll
+D:\Software University\C# MVC Frameworks - ASP.NET\PlaySchool\PlaySchool.Models\bin\Debug\System.Web.WebPages.Razor.dll
+D:\Software University\C# MVC Frameworks - ASP.NET\PlaySchool\PlaySchool.Models\bin\Debug\AutoMapper.xml
+D:\Software University\C# MVC Frameworks - ASP.NET\PlaySchool\PlaySchool.Models\bin\Debug\EntityFramework.xml
+D:\Software University\C# MVC Frameworks - ASP.NET\PlaySchool\PlaySchool.Models\bin\Debug\EntityFramework.SqlServer.xml
+D:\Software University\C# MVC Frameworks - ASP.NET\PlaySchool\PlaySchool.Models\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+D:\Software University\C# MVC Frameworks - ASP.NET\PlaySchool\PlaySchool.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Software University\C# MVC Frameworks - ASP.NET\PlaySchool\PlaySchool.Models\bin\Debug\Microsoft.Owin.xml
+D:\Software University\C# MVC Frameworks - ASP.NET\PlaySchool\PlaySchool.Models\bin\Debug\System.Web.Helpers.xml
+D:\Software University\C# MVC Frameworks - ASP.NET\PlaySchool\PlaySchool.Models\bin\Debug\System.Web.Mvc.xml
+D:\Software University\C# MVC Frameworks - ASP.NET\PlaySchool\PlaySchool.Models\bin\Debug\System.Web.Razor.xml
+D:\Software University\C# MVC Frameworks - ASP.NET\PlaySchool\PlaySchool.Models\bin\Debug\System.Web.WebPages.xml
+D:\Software University\C# MVC Frameworks - ASP.NET\PlaySchool\PlaySchool.Models\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\Software University\C# MVC Frameworks - ASP.NET\PlaySchool\PlaySchool.Models\bin\Debug\System.Web.WebPages.Razor.xml
+D:\Software University\C# MVC Frameworks - ASP.NET\PlaySchool\PlaySchool.Models\obj\Debug\PlaySchool.Models.csprojResolveAssemblyReference.cache
+D:\Software University\C# MVC Frameworks - ASP.NET\PlaySchool\PlaySchool.Models\obj\Debug\PlaySchool.Models.dll
+D:\Software University\C# MVC Frameworks - ASP.NET\PlaySchool\PlaySchool.Models\obj\Debug\PlaySchool.Models.pdb
