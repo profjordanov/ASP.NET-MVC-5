@@ -62,3 +62,34 @@ D:\Software University\C# MVC Frameworks - ASP.NET\PlaySchool\PlaySchool.Models\
 D:\Software University\C# MVC Frameworks - ASP.NET\PlaySchool\PlaySchool.Models\obj\Debug\PlaySchool.Models.csprojResolveAssemblyReference.cache
 D:\Software University\C# MVC Frameworks - ASP.NET\PlaySchool\PlaySchool.Models\obj\Debug\PlaySchool.Models.dll
 D:\Software University\C# MVC Frameworks - ASP.NET\PlaySchool\PlaySchool.Models\obj\Debug\PlaySchool.Models.pdb
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\PlaySchool\PlaySchool.Models\bin\Debug\PlaySchool.Models.dll.config
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\PlaySchool\PlaySchool.Models\bin\Debug\PlaySchool.Models.dll
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\PlaySchool\PlaySchool.Models\bin\Debug\PlaySchool.Models.pdb
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\PlaySchool\PlaySchool.Models\bin\Debug\AutoMapper.dll
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\PlaySchool\PlaySchool.Models\bin\Debug\EntityFramework.dll
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\PlaySchool\PlaySchool.Models\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\PlaySchool\PlaySchool.Models\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\PlaySchool\PlaySchool.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\PlaySchool\PlaySchool.Models\bin\Debug\Microsoft.Owin.dll
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\PlaySchool\PlaySchool.Models\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\PlaySchool\PlaySchool.Models\bin\Debug\Owin.dll
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\PlaySchool\PlaySchool.Models\bin\Debug\System.Web.Helpers.dll
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\PlaySchool\PlaySchool.Models\bin\Debug\System.Web.Mvc.dll
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\PlaySchool\PlaySchool.Models\bin\Debug\System.Web.Razor.dll
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\PlaySchool\PlaySchool.Models\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\PlaySchool\PlaySchool.Models\bin\Debug\System.Web.WebPages.dll
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\PlaySchool\PlaySchool.Models\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\PlaySchool\PlaySchool.Models\bin\Debug\AutoMapper.xml
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\PlaySchool\PlaySchool.Models\bin\Debug\EntityFramework.xml
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\PlaySchool\PlaySchool.Models\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\PlaySchool\PlaySchool.Models\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\PlaySchool\PlaySchool.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\PlaySchool\PlaySchool.Models\bin\Debug\Microsoft.Owin.xml
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\PlaySchool\PlaySchool.Models\bin\Debug\System.Web.Helpers.xml
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\PlaySchool\PlaySchool.Models\bin\Debug\System.Web.Mvc.xml
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\PlaySchool\PlaySchool.Models\bin\Debug\System.Web.Razor.xml
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\PlaySchool\PlaySchool.Models\bin\Debug\System.Web.WebPages.xml
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\PlaySchool\PlaySchool.Models\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\PlaySchool\PlaySchool.Models\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\PlaySchool\PlaySchool.Models\obj\Debug\PlaySchool.Models.dll
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\PlaySchool\PlaySchool.Models\obj\Debug\PlaySchool.Models.pdb
