@@ -1,0 +1,11 @@
+﻿@model SoftUni.Blog.App.Models.ViewModels.PostFullViewModel
+@{
+    ViewBag.Title = Model.Title;
+}
+
+<h2>@Model.Title</h2>
+by @Model.Author
+
+<p>@Model.Content</p>
+
+@Html.ActionLink("Back to home", "Index", "Home", routeValues: null, htmlAttributes: new { @class="btn btn-primary" })
