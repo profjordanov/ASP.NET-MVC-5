@@ -1,0 +1,42 @@
+﻿@using StreamPowered.App.Models.BindingModels;
+@using System.Globalization;
+@model StreamPowered.App.Models.ViewModels.GameDetailsViewModel
+@{
+    ViewBag.Title = Model.Title;
+}
+<h2>@Model.Title <span class="label label-warning">@Model.Rating.ToString("F2", CultureInfo.InvariantCulture)</span></h2>
+<h4>Genre: <a href="~/Genres/Details/@Model.GenreId" class="btn btn-sm btn-primary">@Model.GenreName</a></h4>
+<div id="rating-container">
+    @Html.Action("RatingDetails", "Ratings", new { id = Model.Id })
+</div>
+<h4>Description:</h4>
+<p>@Model.Description</p>
+
+<h4>System Requirements:</h4>
+<p>@Model.SystemRequirements</p>
+
+<h4>Images:</h4>
+<div class="row">
+    @foreach (var url in Model.ImageUrls)
+    {
+        <img src="@url" class="col-md-3" />
+    }
+</div>
+
+<h4>Reviews:</h4>
+@{
+    var reviewModel = new ReviewBindingModel() { GameId = Model.Id };
+}
+<div id="new-review">
+    @Html.Partial("_AddReview", reviewModel)
+</div>
+<div id="reviews-container">
+    @if (!Model.Reviews.Any())
+    {
+        @:<p>No reviews yet.</p>
+    }
+    else
+    {
+        @Html.DisplayFor(m => m.Reviews)
+    }
+</div>

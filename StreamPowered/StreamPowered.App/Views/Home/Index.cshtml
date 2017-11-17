@@ -1,0 +1,15 @@
+﻿@model StreamPowered.App.Models.ViewModels.HomePageViewModel
+@{
+    ViewBag.Title = "Home";
+}
+
+<div class="row">
+    <div class="col-md-6">
+        <h2>Highest-Rated Games</h2>
+        @Html.DisplayFor(m => m.HighestRatedGames)
+    </div>
+    <div class="col-md-6">
+        <h2>Latest Reviews</h2>
+        @Html.DisplayFor(m => m.LatestReviews)
+    </div>
+</div>

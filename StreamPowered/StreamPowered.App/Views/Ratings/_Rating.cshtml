@@ -1,0 +1,14 @@
+﻿@model StreamPowered.App.Models.ViewModels.RatingViewModel
+<div class="well">
+    <strong>Your rating: </strong>
+    <span class="text-warning">
+        @for (int i = 1; i <= Model.Value; i++)
+        {
+            <span class="glyphicon glyphicon-star"></span>
+        }
+        @for (int i = Model.Value + 1; i <= 5; i++)
+        {
+            <span class="glyphicon glyphicon-star-empty"></span>
+        }
+    </span>
+</div>

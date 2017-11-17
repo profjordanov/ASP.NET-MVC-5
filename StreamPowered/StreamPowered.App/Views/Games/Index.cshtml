@@ -1,0 +1,8 @@
+﻿@model IEnumerable<StreamPowered.App.Models.ViewModels.ConciseGameViewModel>
+@{
+    ViewBag.Title = "All Games";
+}
+
+<h2>@ViewBag.Title</h2>
+@Html.DisplayForModel()
+@Html.Partial("_Pagination")

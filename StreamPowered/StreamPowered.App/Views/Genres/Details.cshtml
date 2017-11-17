@@ -1,0 +1,15 @@
+﻿@model IEnumerable<StreamPowered.App.Models.ViewModels.ConciseGameViewModel>
+@{
+    ViewBag.Title = ViewBag.Genre;
+}
+
+<h2>All Games in <span class="label label-primary">@ViewBag.Genre</span></h2>
+@if (!Model.Any())
+{
+    @:<p>No games in this genre yet.</p>
+}
+else
+{
+    @Html.DisplayForModel()
+}
+

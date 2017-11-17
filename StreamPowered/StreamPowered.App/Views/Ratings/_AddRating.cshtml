@@ -1,0 +1,24 @@
+﻿@model StreamPowered.App.Models.BindingModels.RatingBindingModel
+@if (User.Identity.IsAuthenticated)
+{
+    <div class="well">
+        @Html.ValidationSummary()
+        @using (Ajax.BeginForm(
+                            "Add",
+                            "Ratings",
+                            new { id = Model.GameId },
+                            new AjaxOptions() { UpdateTargetId = "rating-container", InsertionMode = InsertionMode.Replace },
+                            new { id = "add-rating-form", @class = "form-inline" }))
+        {
+            <label for="rating">Your rating:</label>
+            var ratingOptions = Enumerable.Range(1, 5).Select(x => new SelectListItem() { Value = x.ToString(), Text = x.ToString() });
+            <div class="form-group">
+                @Html.DropDownListFor(m => m.Value, ratingOptions, htmlAttributes: new { @class = "form-control" })
+            </div>
+                <div class="form-group">
+                    <input type="submit" id="add-rating-button" value="Add rating" class="btn btn-primary" />
+                </div>
+        }
+    </div>
+
+}

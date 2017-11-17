@@ -1,0 +1,6 @@
+﻿@model StreamPowered.App.Models.ViewModels.ConciseReviewViewModel
+<div class="well">
+    <div>@Model.Content</div>
+    <br />
+    <div><i class="glyphicon glyphicon-user"></i><span class="review-author"> @Model.Author</span> on @Model.CreationTime.ToString("dd.MM.yyyy")</div>
+</div>

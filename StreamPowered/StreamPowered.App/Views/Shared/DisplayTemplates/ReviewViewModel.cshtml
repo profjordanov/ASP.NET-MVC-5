@@ -1,0 +1,7 @@
+﻿@model StreamPowered.App.Models.ViewModels.ReviewViewModel
+<div class="well">
+    <div>@Model.Content</div>
+    <br />
+    <div><i class="glyphicon glyphicon-user"></i><span class="review-author"> @Model.Author</span> on @Model.CreationTime.ToString("dd.MM.yyyy")</div>
+    <div>on game @Html.ActionLink(Model.GameTitle, "Details", "Games", new { id = Model.GameId }, null)</div>
+</div>
