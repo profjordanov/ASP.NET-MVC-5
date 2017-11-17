@@ -1,0 +1,11 @@
+﻿@using PagedList.Mvc
+@model PagedList.IPagedList<SportSystem.WebApp.ViewModels.MatchViewModel>
+@{
+    ViewBag.Title = "Matches";
+}
+
+<br/>
+<div class="row">
+    @Html.DisplayFor(x => x)
+    @Html.PagedListPager(Model, page => Url.Action("Index", new { page }))
+</div>

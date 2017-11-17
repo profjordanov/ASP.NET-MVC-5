@@ -1,0 +1,9 @@
+﻿@model SportSystem.WebApp.ViewModels.TeamViewModel
+
+<div class="panel panel-body panel-danger">
+    <h3>@Html.ActionLink(Model.Name, "Details", "Teams", new {id = Model.Id}, null)</h3>
+    <span class="pull-right">
+        Votes: <span id="team-@Model.Id-votes">@Model.Votes</span>
+    </span>
+    <a href="@Model.Website">@Model.Website</a>
+</div>

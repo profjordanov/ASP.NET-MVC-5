@@ -1,0 +1,148 @@
+﻿@using System.Linq
+@model SportSystem.WebApp.ViewModels.MatchDetailsViewModel
+
+@section styles{
+    <style>
+        .form-control {
+            display: inline-block;
+            max-width: 100px;
+        }
+    </style>
+}
+
+@{
+    ViewBag.Title = "Match Details";
+}
+
+<div class="row">
+    <div class="col-md-8">
+        <h1>Match:</h1>
+        <h4>
+            Home Team: @Html.ActionLink(Model.HomeTeamName, "Details", "Teams", new { id = Model.HomeTeamId }, null) (Bets: $<span id="home-bets">@Model.HomeBets</span>)
+        </h4>
+        <h4>
+            Away Team: @Html.ActionLink(Model.AwayTeamName, "Details", "Teams", new { id = Model.AwayTeamId }, null) (Bets: $<span id="away-bets">@Model.AwayBets</span>)
+        </h4>
+        <p>
+            Date and Time: @Model.Start
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h2>Bets:</h2>
+        @using (Ajax.BeginForm("BetForHomeMatch", "Matches", new { matchId = Model.Id }, new AjaxOptions()
+        {
+            HttpMethod = "POST",
+            OnSuccess = "onBetSuccess",
+            OnFailure = "onBetFailure"
+        }, new { @class = "form-group" }))
+        {
+            <label for="home-bet-input" class="control-label">Home Bet:</label>
+            <input id="home-bet-input" class="bet-input form-control" type="number" name="HomeBet" value="" />
+
+            <input type="submit" name="name" value="Bet" class="btn btn-primary" />
+        }
+
+        @using (Ajax.BeginForm("BetForAwayMatch", "Matches", new { matchId = Model.Id }, new AjaxOptions()
+    {
+        HttpMethod = "POST",
+        OnSuccess = "onBetSuccess",
+        OnFailure = "onBetFailure"
+    }))
+        {
+            <label for="away-bet-input" class="control-label">Away Bet:</label>
+            <input id="away-bet-input" class="bet-input form-control" type="number" name="AwayBet" value="" />
+
+            <input type="submit" name="name" value="Bet" class="btn btn-primary" />
+        }
+
+        <div id="bet-messages"></div>
+    </div>
+</div>
+
+<div id="comments">
+    <h2>Comments:</h2>
+    @if (Model.Comments.Any())
+    {
+        @Html.DisplayFor(x => x.Comments)
+    } else
+    {
+        <p id="no-comments">No comments.</p>
+    }
+</div>
+
+<div>
+    <h2>Add Comment:</h2>
+    @using (Ajax.BeginForm("AddComment", "Matches", new { matchId = Model.Id }, new AjaxOptions()
+    {
+        HttpMethod = "POST",
+        InsertionMode = InsertionMode.InsertAfter,
+        UpdateTargetId = "comments",
+        OnSuccess = "onAddCommentSuccess",
+        OnFailure = "onAddCommentFailure"
+    }, new { @class = "form-group" }))
+    {
+        <label for="comment-input" class="control-label">Comment:</label>
+        <textarea rows="3" cols="50" id="comment-input" name="Content" width="200px" class=""></textarea>
+        <br />
+        <br />
+        <input type="submit" name="name" value="Comment" class="btn btn-primary" />
+        <div id="add-comment-messages"></div>
+    }
+</div>
+
+@section scripts {
+    <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+
+    <script>
+        function clearBetFields() {
+            var inputs = document.querySelectorAll('.bet-input');
+            for (var i = 0; i < inputs.length; i++) {
+                inputs[i].value = '';
+            }
+        }
+
+        function onBetSuccess(data) {
+            var homeBetsSpan = document.getElementById('home-bets');
+            var awayBetsSpan = document.getElementById('away-bets');
+
+            homeBetsSpan.innerHTML = data.HomeBets;
+            awayBetsSpan.innerHTML = data.AwayBets;
+
+            document.getElementById('bet-messages').innerHTML = 'You successfully bet';
+            clearBetFields();
+            setTimeout(function () {
+                document.getElementById('bet-messages').innerHTML = '';
+            }, 1500);
+        }
+
+        function onBetFailure(error) {
+            document.getElementById('bet-messages').innerHTML = error.statusText;
+            setTimeout(function () {
+                document.getElementById('bet-messages').innerHTML = '';
+            }, 1500);
+        }
+
+        function onAddCommentSuccess() {
+            var commentsWrapper = document.querySelector('#comments #nocomments');
+            if (commentsWrapper) {
+                commentsWrapper.removeChild(document.getElementById('no-comments'));
+            }
+            var addCommentMessageWrapper = document.getElementById("add-comment-messages");
+            addCommentMessageWrapper.innerHTML = "You successfully added comment";
+            setTimeout(function () {
+                addCommentMessageWrapper.innerHTML = '';
+            }, 1500);
+        }
+
+        function onAddCommentFailure(error) {
+            var addCommentMessageWrapper = document.getElementById("add-comment-messages");
+            addCommentMessageWrapper.innerHTML = error.statusText;
+            console.log(error);
+            document.getElementById('comment-input').innerHTML = '';
+            setTimeout(function () {
+                addCommentMessageWrapper.innerHTML = '';
+            }, 1500);
+
+        }
+    </script>
+}

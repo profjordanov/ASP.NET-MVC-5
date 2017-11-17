@@ -1,0 +1,55 @@
+﻿@using System.Linq
+@model SportSystem.WebApp.ViewModels.TeamDetailsViewModel
+
+@{
+    ViewBag.Title = "Team Details";
+}
+
+<div class="row">
+    <div class="col-md-8">
+        <h2>@Model.Name</h2>
+        <p>
+            Nickname: <strong>@Model.Nickname</strong>
+        </p>
+        <p>
+            Founded: <strong>@Model.Founded</strong>
+        </p>
+    </div>
+
+    <div class="col-md-4">
+        <h3>Votes: <span id="team-@Model.Id-votes">@Model.Votes</span></h3>
+        @if (!Model.UserHasVoted)
+        {
+            using (Ajax.BeginForm("Vote", "Teams", new { teamId = Model.Id }, new AjaxOptions()
+            {
+                HttpMethod = "POST",
+                InsertionMode = InsertionMode.Replace,
+                UpdateTargetId = string.Format("team-{0}-votes", Model.Id)
+            }))
+            {
+                @Html.AntiForgeryToken()
+
+                <input type="submit" name="name" value="+" class="btn btn-success" />
+            }
+        }
+        else
+        {
+            <em>You are voted</em>
+        }
+    </div>
+</div>
+<div class="row">
+    <h3>Players:</h3>
+    @if (Model.Players.Any()) {
+        @Html.DisplayFor(x => x.Players)
+    }
+    else
+    {
+        <p>No players.</p>
+    }
+</div>
+
+@section scripts {
+    
+<script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+}

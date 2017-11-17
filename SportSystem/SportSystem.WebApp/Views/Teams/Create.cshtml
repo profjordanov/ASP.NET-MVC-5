@@ -1,0 +1,63 @@
+﻿@model SportSystem.WebApp.InputModels.TeamInputModel
+           
+@{
+    ViewBag.Title = "Create Team";
+}
+
+@section styles {
+    <link href="~/Content/bootstrap-select.min.css" rel="stylesheet" />
+}
+
+@using (Html.BeginForm("Create", "Teams", FormMethod.Post, new { @class = "form-horizontal" }))
+{
+    <h2>Create Team</h2>
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+    
+    <div class="form-group">
+        @Html.LabelFor(m => m.Name, new {@class = "col-md-2 control-label"})
+        @Html.TextBoxFor(x => x.Name, new {@class = "form-control"})
+        @Html.ValidationMessageFor(x => x.Name, "", new {@class = "text-danger"})
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Nickname, new { @class = "col-md-2 control-label" })
+        @Html.TextBoxFor(x => x.Nickname, new { @class = "form-control" })
+        @Html.ValidationMessageFor(x => x.Nickname, "", new { @class = "text-danger" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Website, new { @class = "col-md-2 control-label" })
+        @Html.TextBoxFor(x => x.Website, new { @class = "form-control" })
+        @Html.ValidationMessageFor(x => x.Website, "", new { @class = "text-danger" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Founded, new { @class = "col-md-2 control-label" })
+        @Html.TextBoxFor(x => x.Founded, new { @class = "form-control" })
+        @Html.ValidationMessageFor(x => x.Founded, "", new { @class = "text-danger" })
+    </div>
+    
+    <h3>Players:</h3>
+    <div id="players">
+         @Html.Partial("_CreatePlayerPartial")
+    </div>
+
+    @Ajax.ActionLink("Add more players", "GetPlayerInput", new { }, new AjaxOptions()
+    {
+        HttpMethod = "GET",
+        UpdateTargetId = "players",
+        InsertionMode = InsertionMode.InsertAfter
+    }, new { @class = "col-md-offset-4" })
+
+    <br/>
+    <input type="submit" name="name" value="Add Team" class="col-md-offset-2 btn btn-lg btn-primary" />
+}
+
+@section scripts {
+    
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/bootstrap-select.min.js"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+
+}

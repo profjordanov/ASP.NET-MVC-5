@@ -1,0 +1,10 @@
+﻿@model SportSystem.WebApp.ViewModels.CommentViewModel
+
+<div id="comment-@Model.Id" class=" panel panel-body panel-default">
+    <div>
+        <strong>@Model.Username:</strong> @Model.Content
+    </div>
+    <div>
+        <em>Created on: @Model.CreatedOn</em>
+    </div>
+</div>

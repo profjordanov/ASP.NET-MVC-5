@@ -1,0 +1,5 @@
+﻿@using System.Collections.Generic
+<div class="form-group">
+    @Html.Label("Player", new {@class = "col-md-2 control-label"})
+    @Html.DropDownList("PlayerIds", (IEnumerable<SelectListItem>) this.ViewBag.Players, new {name = "PlayerIds[]", @class = "form-control"})
+</div>
