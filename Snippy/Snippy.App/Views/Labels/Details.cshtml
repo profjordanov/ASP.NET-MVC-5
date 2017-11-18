@@ -1,0 +1,13 @@
+﻿@model IEnumerable<Snippy.App.Models.ViewModels.ConciseSnippetViewModel>
+@{
+    ViewBag.Title = "Label " + ViewBag.Label;
+}
+<h2>All snippets with label <span class="label label-primary">@ViewBag.Label</span></h2>
+@if (Model.Any())
+{
+    @Html.DisplayForModel()
+}
+else
+{
+    @:There are currently no snippets for this label.
+}

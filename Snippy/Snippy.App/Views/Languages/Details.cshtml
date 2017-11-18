@@ -1,0 +1,13 @@
+﻿@model IEnumerable<Snippy.App.Models.ViewModels.ConciseSnippetViewModel>
+@{
+    ViewBag.Title = "Language " + ViewBag.Language;
+}
+<h2>All snippets for language <span class="label label-success">@ViewBag.Language</span></h2>
+@if (Model.Any())
+{
+    @Html.DisplayForModel()
+}
+else
+{
+    @:There are currently no snippets for this language.
+}

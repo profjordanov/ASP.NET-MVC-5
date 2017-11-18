@@ -1,0 +1,9 @@
+﻿<ul class="nav navbar-nav">
+    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+    <li>@Html.ActionLink("All snippets", "Index", "Snippets")</li>
+    @if (User.Identity.IsAuthenticated)
+    {
+        <li>@Html.ActionLink("My snippets", "MySnippets", "Snippets")</li>
+        <li>@Html.ActionLink("New snippet", "Add", "Snippets")</li>
+    }
+</ul>

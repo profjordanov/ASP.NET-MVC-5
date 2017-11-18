@@ -1,0 +1,24 @@
+﻿@model Snippy.App.Models.ViewModels.HomePageViewModel
+    @{
+        ViewBag.Title = "Home";
+    }
+    <div class="row">
+        <div class="col-md-5">
+            <h3>Latest snippets:</h3>
+            @Html.DisplayFor(m => m.LatestSnippets)
+        </div>
+        <div class="col-md-5">
+            <h3>Latest comments:</h3>
+            @Html.DisplayFor(m => m.LatestComments)
+        </div>
+        <div class="col-md-2">
+            <div class="panel panel-primary">
+                <div class="panel-heading">Best labels</div>
+                <div class="panel-body">
+                    <ul class="nav nav-pills nav-stacked">
+                        @Html.DisplayFor(m => m.BestLabels)
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>

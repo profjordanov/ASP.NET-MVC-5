@@ -1,0 +1,25 @@
+﻿@model Snippy.App.Models.BindingModels.CommentBindingModel
+@if (User.Identity.IsAuthenticated)
+{
+    <div class="row">
+        <div class="col-md-8">
+            @Html.ValidationSummary()
+            @using (Ajax.BeginForm(
+                                    "Add",
+                                    "Comments",
+                                    new { id = Model.SnippetId },
+                                    new AjaxOptions() { UpdateTargetId = "comments-container", InsertionMode = InsertionMode.InsertBefore, OnSuccess = "updateCommentForm" },
+                                    new { id = "add-comment-form" }))
+            {
+                @Html.TextAreaFor(m => m.Content, new { @class = "form-control", rows = 3, placeholder = "Write a public comment...", id = "content" })
+                <input type="submit" id="add-comment-button" value="Add comment" class="btn btn-primary" />
+            }
+        </div>
+    </div>
+}
+<script>
+    function updateCommentForm() {
+        $("#no-comments").hide();
+        $("#content").val("");
+    }
+</script>

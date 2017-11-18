@@ -1,0 +1,40 @@
+﻿@using Snippy.App.Models.BindingModels
+@model Snippy.App.Models.ViewModels.SnippetDetailsViewModel
+@{
+    ViewBag.Title = Model.Title;
+}
+
+<h2>
+    @Html.DisplayFor(m => m.Language)
+    @Model.Title
+    @if (Model.Author == User.Identity.Name)
+    {
+        @Html.ActionLink("Edit", "Edit", "Snippets", new { id = Model.Id }, new { @class = "btn btn-warning" })
+    }
+</h2>
+<div>by <i class="glyphicon glyphicon-user"></i><span class="comment-author"> @Model.Author</span> on @Model.CreationTime.ToString("dd.MM.yyyy")</div>
+<div class="labels">
+    Labels: @Html.DisplayFor(m => m.Labels)
+</div>
+<div>@Model.Description</div>
+<pre>@Model.Code</pre>
+<div id="comments">
+    <h4>Comments:</h4>
+    @{
+        var commentModel = new CommentBindingModel() { SnippetId = Model.Id };
+    }
+    <div id="new-comment">
+        @Html.Partial("_AddComment", commentModel)
+    </div>
+
+    <div id="comments-container">
+        @if (Model.Comments.Any())
+        {
+            @Html.DisplayFor(m => m.Comments)
+        }
+        else
+        {
+            <div id="no-comments">There are no comments right now.</div>
+        }
+    </div>
+</div>

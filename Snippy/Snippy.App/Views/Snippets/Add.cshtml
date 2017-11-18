@@ -1,0 +1,16 @@
+﻿@model Snippy.App.Models.BindingModels.SnippetBindingModel
+@{
+    ViewBag.Title = "Add new snippet";
+}
+
+<h2>Add new snippet</h2>
+@using (Html.BeginForm("Add", "Snippets", FormMethod.Post, new { @class = "form-horizontal" }))
+{
+    @Html.EditorForModel()
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <input type="submit" value="Add" class="btn btn-success" />
+            @Html.ActionLink("Cancel", "Index", "Home", new { @class = "btn btn-default" })
+        </div>
+    </div>
+}

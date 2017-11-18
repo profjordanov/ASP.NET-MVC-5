@@ -1,0 +1,16 @@
+﻿@model Snippy.App.Models.BindingModels.SnippetBindingModel
+@{
+    ViewBag.Title = "Edit snippet";
+}
+
+<h2>Edit snippet "@Model.Title"</h2>
+@using (Html.BeginForm("Edit", "Snippets", FormMethod.Post, new { @class = "form-horizontal" }))
+{
+    @Html.EditorForModel()
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <input type="submit" value="Edit" class="btn btn-success" />
+            @Html.ActionLink("Cancel", "Index", "Home", new { @class = "btn btn-default" })
+        </div>
+    </div>
+}

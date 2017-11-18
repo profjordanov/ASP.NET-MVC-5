@@ -1,0 +1,7 @@
+﻿@model Snippy.App.Models.ViewModels.LabelViewModel
+<li>
+    <a href="/Labels/Details/@Model.Id">
+        <span class="badge pull-right">@Model.SnippetsCount</span>
+        @Model.Text
+    </a>
+</li>

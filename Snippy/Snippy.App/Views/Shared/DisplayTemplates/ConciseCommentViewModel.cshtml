@@ -1,0 +1,9 @@
+﻿@model Snippy.App.Models.ViewModels.ConciseCommentViewModel
+<div class="well">
+    @if(User.Identity.Name == Model.Author)
+    {
+        <a href="/Comments/Delete/@Model.Id" class="close" data-dismiss="alert"><span>&times;</span></a>
+    }
+    <div>@Model.Content</div>
+    <div><i class="glyphicon glyphicon-user"></i><span class="comment-author"> @Model.Author</span> on @Model.CreationTime.ToString("dd.MM.yyyy HH:mm:ss")</div>
+</div>
