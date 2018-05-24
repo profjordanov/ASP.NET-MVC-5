@@ -12,3 +12,17 @@ C:\Users\Jordan\Desktop\SoftUni.Blog\SoftUni.Blog.Models\bin\Debug\Microsoft.Asp
 C:\Users\Jordan\Desktop\SoftUni.Blog\SoftUni.Blog.Models\obj\Debug\SoftUni.Blog.Models.csprojResolveAssemblyReference.cache
 C:\Users\Jordan\Desktop\SoftUni.Blog\SoftUni.Blog.Models\obj\Debug\SoftUni.Blog.Models.dll
 C:\Users\Jordan\Desktop\SoftUni.Blog\SoftUni.Blog.Models\obj\Debug\SoftUni.Blog.Models.pdb
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\SoftUni.Blog\SoftUni.Blog.Models\bin\Debug\SoftUni.Blog.Models.dll.config
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\SoftUni.Blog\SoftUni.Blog.Models\bin\Debug\SoftUni.Blog.Models.dll
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\SoftUni.Blog\SoftUni.Blog.Models\bin\Debug\SoftUni.Blog.Models.pdb
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\SoftUni.Blog\SoftUni.Blog.Models\bin\Debug\EntityFramework.dll
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\SoftUni.Blog\SoftUni.Blog.Models\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\SoftUni.Blog\SoftUni.Blog.Models\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\SoftUni.Blog\SoftUni.Blog.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\SoftUni.Blog\SoftUni.Blog.Models\bin\Debug\EntityFramework.xml
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\SoftUni.Blog\SoftUni.Blog.Models\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\SoftUni.Blog\SoftUni.Blog.Models\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\SoftUni.Blog\SoftUni.Blog.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\SoftUni.Blog\SoftUni.Blog.Models\obj\Debug\SoftUni.Blog.Models.csprojResolveAssemblyReference.cache
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\SoftUni.Blog\SoftUni.Blog.Models\obj\Debug\SoftUni.Blog.Models.dll
+C:\Users\Jordan\Documents\GitHub\CSharp-MVC-Frameworks---ASP.NET\SoftUni.Blog\SoftUni.Blog.Models\obj\Debug\SoftUni.Blog.Models.pdb
