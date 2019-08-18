@@ -1,0 +1,5 @@
+E:\Courses\OData\OData\ODataNetClient\bin\Release\ODataNetClient.exe
+E:\Courses\OData\OData\ODataNetClient\bin\Release\ODataNetClient.pdb
+E:\Courses\OData\OData\ODataNetClient\obj\x86\Release\ResolveAssemblyReference.cache
+E:\Courses\OData\OData\ODataNetClient\obj\x86\Release\ODataNetClient.exe
+E:\Courses\OData\OData\ODataNetClient\obj\x86\Release\ODataNetClient.pdb

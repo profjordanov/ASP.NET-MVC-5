@@ -1,0 +1,11 @@
+c:\demos\OData\ODataServer\bin\ODataServer.dll
+c:\demos\OData\ODataServer\bin\ODataServer.pdb
+c:\demos\OData\ODataServer\obj\Debug\ResolveAssemblyReference.cache
+c:\demos\OData\ODataServer\obj\Debug\ODataServer.dll
+c:\demos\OData\ODataServer\obj\Debug\ODataServer.pdb
+c:\demos\OData\ODataServer\bin\EntityFramework.dll
+c:\demos\OData\ODataServer\bin\EntityFramework.xml
+c:\demos\OData\ODataServer\bin\System.Data.SqlServerCe.dll
+c:\demos\OData\ODataServer\bin\System.Data.SqlServerCe.Entity.dll
+c:\demos\OData\ODataServer\bin\WebActivator.dll
+c:\demos\OData\ODataServer\bin\WebActivator.pdb

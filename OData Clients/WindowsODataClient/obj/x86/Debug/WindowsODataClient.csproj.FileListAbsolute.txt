@@ -1,0 +1,13 @@
+C:\demos\OData\WindowsODataClient\bin\Debug\WindowsODataClient.exe
+C:\demos\OData\WindowsODataClient\bin\Debug\WindowsODataClient.pdb
+C:\demos\OData\WindowsODataClient\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\demos\OData\WindowsODataClient\obj\x86\Debug\MainWindow.baml
+C:\demos\OData\WindowsODataClient\obj\x86\Debug\MainWindow.g.cs
+C:\demos\OData\WindowsODataClient\obj\x86\Debug\App.g.cs
+C:\demos\OData\WindowsODataClient\obj\x86\Debug\WindowsODataClient_MarkupCompile.cache
+C:\demos\OData\WindowsODataClient\obj\x86\Debug\WindowsODataClient.g.resources
+C:\demos\OData\WindowsODataClient\obj\x86\Debug\WindowsODataClient.Properties.Resources.resources
+C:\demos\OData\WindowsODataClient\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\demos\OData\WindowsODataClient\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\demos\OData\WindowsODataClient\obj\x86\Debug\WindowsODataClient.exe
+C:\demos\OData\WindowsODataClient\obj\x86\Debug\WindowsODataClient.pdb

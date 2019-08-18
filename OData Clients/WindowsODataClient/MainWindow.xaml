@@ -1,0 +1,97 @@
+﻿<Window x:Class="WindowsODataClient.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="289" Width="600" Loaded="Window_Loaded" >
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="236*" />
+            <RowDefinition Height="50*" />
+            <RowDefinition Height="30*" />
+        </Grid.RowDefinitions>
+        <DataGrid ItemsSource="{Binding Path=Tasks}" AutoGenerateColumns="False" Grid.RowSpan="2">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Binding="{Binding ID}"/>
+                <DataGridTextColumn Header="Description" Binding="{Binding Description}"/>
+                <DataGridComboBoxColumn Header="Assigned To"  DisplayMemberPath="Name"   SelectedItemBinding="{Binding AssignedTo}">
+                    <DataGridComboBoxColumn.ElementStyle>
+                        <Style TargetType="ComboBox">
+                            <Setter Property="ItemsSource" Value="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Path=DataContext.Users}"/>
+                            <Setter Property="IsReadOnly" Value="True"/>
+                        </Style>
+                    </DataGridComboBoxColumn.ElementStyle>
+                    <DataGridComboBoxColumn.EditingElementStyle>
+                        <Style TargetType="ComboBox">
+                            <Setter Property="ItemsSource" Value="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Path=DataContext.Users}"/>
+                        </Style>
+                    </DataGridComboBoxColumn.EditingElementStyle>
+
+                </DataGridComboBoxColumn>
+
+                <DataGridComboBoxColumn Header="Priority"  DisplayMemberPath="Name"   SelectedItemBinding="{Binding Priority}">
+                    <DataGridComboBoxColumn.ElementStyle>
+                        <Style TargetType="ComboBox">
+                            <Setter Property="ItemsSource" Value="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Path=DataContext.Priorities}"/>
+                            <Setter Property="IsReadOnly" Value="True"/>
+                        </Style>
+                    </DataGridComboBoxColumn.ElementStyle>
+                    <DataGridComboBoxColumn.EditingElementStyle>
+                        <Style TargetType="ComboBox">
+                            <Setter Property="ItemsSource" Value="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Path=DataContext.Priorities}"/>
+                        </Style>
+                    </DataGridComboBoxColumn.EditingElementStyle>
+
+                </DataGridComboBoxColumn>
+
+                <DataGridComboBoxColumn Header="Status"  DisplayMemberPath="Name"   SelectedItemBinding="{Binding Status}">
+                    <DataGridComboBoxColumn.ElementStyle>
+                        <Style TargetType="ComboBox">
+                            <Setter Property="ItemsSource" Value="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Path=DataContext.Statuses}"/>
+                            <Setter Property="IsReadOnly" Value="True"/>
+                        </Style>
+                    </DataGridComboBoxColumn.ElementStyle>
+                    <DataGridComboBoxColumn.EditingElementStyle>
+                        <Style TargetType="ComboBox">
+                            <Setter Property="ItemsSource" Value="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Window}}, Path=DataContext.Statuses}"/>
+                        </Style>
+                    </DataGridComboBoxColumn.EditingElementStyle>
+
+                </DataGridComboBoxColumn>
+
+                <DataGridTemplateColumn Header="Start Date">
+                    <DataGridTemplateColumn.CellEditingTemplate>
+                        <DataTemplate>
+                            <DatePicker SelectedDate="{Binding StartDate}" SelectedDateFormat="Short" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellEditingTemplate>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding StartDate, StringFormat=d}"  />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                
+                <DataGridTemplateColumn Header="Due Date">
+                    <DataGridTemplateColumn.CellEditingTemplate>
+                        <DataTemplate>
+                            <DatePicker SelectedDate="{Binding DueDate}" SelectedDateFormat="Short" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellEditingTemplate>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding DueDate, StringFormat=d}" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            
+            
+            </DataGrid.Columns>
+        </DataGrid>
+        <StackPanel Orientation="Horizontal" Grid.Row="1" HorizontalAlignment="Center">
+            <Button Name="nextPage" Click="nextPage_Click" Height="30" Width="75" Margin="5">Next page</Button>
+            <Button Name="saveChanges" Height="30" Width="75" Margin="5" Click="saveChanges_Click">Save</Button>
+        </StackPanel>
+        
+        <TextBlock Grid.Row="2" Name="Status" Margin="2" />
+    </Grid>
+</Window>

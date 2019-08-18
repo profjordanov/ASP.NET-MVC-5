@@ -1,0 +1,5 @@
+C:\demos\OData\WebODataClients\bin\WebODataClients.dll
+C:\demos\OData\WebODataClients\bin\WebODataClients.pdb
+C:\demos\OData\WebODataClients\obj\Debug\ResolveAssemblyReference.cache
+C:\demos\OData\WebODataClients\obj\Debug\WebODataClients.dll
+C:\demos\OData\WebODataClients\obj\Debug\WebODataClients.pdb

@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script src="Scripts/jquery-1.7.min.js" type="text/javascript"></script>
+<script src="Scripts/modernizr-2.0.6-development-only.js" type="text/javascript"></script>
+<script src="Scripts/jQuery.tmpl.min.js" type="text/javascript"></script>
+<script src="Scripts/jQuery-ui-1.8.16.min.js" type="text/javascript"></script>
+<link href="Content/themes/base/jquery-ui.css" type="text/css" rel="Stylesheet" />
+
+<!-- UI fixups -->
+<script type="text/javascript">
+    $(function () {
+        if (!Modernizr.inputtypes.date) {
+            $("input[type=date]").datepicker();
+        }
+    });
+</script>
+
+<!-- templates -->
+
+<script id="taskTemplate" type="text/x-jquery-tmpl">
+    <tr>
+        <td>${Description}</td>
+        <td>${formatDate(StartDate)}</td>
+        <td>${formatDate(DueDate)}</td>
+        <td>${Priority.Name}</td>
+        <td>${Status.Name}</td>
+    </tr>
+</script>
+
+<script id="dropDownListTemplate" type="text/x-jquery-tmpl">
+    <option value="${ID}">${Name}</option>
+</script>
+
+<!-- api scripts -->
+<!-- data js -->
+<script src="scripts/datajs-1.0.2.min.js" type="text/javascript"></script>
+<script src="DataJsClient.js" type="text/javascript"></script>
+
+<!-- raw jquery -->
+<!--<script src="RawJQuery.js" type="text/javascript"></script>
+-->
+    
+    <title>Cross domain OData JavaScript Clients</title>
+</head>
+
+<body>
+<h1>Task list</h1>
+<div id="taskListContainer" style="float:left">
+    <table id="tasks">
+        <tr>
+            <th>Description</th>
+            <th>Start date</th>
+            <th>Due date</th>
+            <th>Priority</th>
+            <th>Status</th>
+        </tr>
+    </table>
+</div>
+
+<div id="newTaskContainer" style="float:left; margin-left: 25px;">
+    <form id="newTaskForm"action="" method="post">
+        Description: <input type="text" id="taskDescription" /><br />
+        Start date: <input type="date" id="taskStartDate" /><br />
+        Due date: <input type="date" id="taskDueDate" /><br />
+        Priority: <select id="taskPriority"></select><br />
+        Status: <select id="taskStatus"></select><br />
+        Assigned To: <select id="taskUser"></select><br />
+        <input type="button" onclick="submitTask();" value="Add task" />
+    </form>
+    <br />
+    <span id="statusMsg" style="display:none; color:Red; font-weight:bold" />
+</div>
+</body>
+</html>

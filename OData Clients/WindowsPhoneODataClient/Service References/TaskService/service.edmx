@@ -1,0 +1,73 @@
+﻿<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx">
+  <edmx:DataServices xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" m:DataServiceVersion="1.0">
+    <Schema Namespace="ODataServer.Models" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+      <EntityType Name="Task">
+        <Key>
+          <PropertyRef Name="ID" />
+        </Key>
+        <Property Name="ID" Type="Edm.Int32" Nullable="false" p8:StoreGeneratedPattern="Identity" xmlns:p8="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+        <Property Name="Description" Type="Edm.String" Nullable="true" MaxLength="4000" Unicode="true" FixedLength="false" />
+        <Property Name="DueDate" Type="Edm.DateTime" Nullable="false" />
+        <Property Name="StartDate" Type="Edm.DateTime" Nullable="false" />
+        <NavigationProperty Name="Priority" Relationship="ODataServer.Models.Task_Priority" FromRole="Task_Priority_Source" ToRole="Task_Priority_Target" />
+        <NavigationProperty Name="Status" Relationship="ODataServer.Models.Task_Status" FromRole="Task_Status_Source" ToRole="Task_Status_Target" />
+        <NavigationProperty Name="AssignedTo" Relationship="ODataServer.Models.User_Tasks" FromRole="User_Tasks_Target" ToRole="User_Tasks_Source" />
+      </EntityType>
+      <EntityType Name="TaskPriority">
+        <Key>
+          <PropertyRef Name="ID" />
+        </Key>
+        <Property Name="ID" Type="Edm.Int32" Nullable="false" p8:StoreGeneratedPattern="Identity" xmlns:p8="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+        <Property Name="Name" Type="Edm.String" Nullable="true" MaxLength="4000" Unicode="true" FixedLength="false" />
+      </EntityType>
+      <EntityType Name="TaskStatus">
+        <Key>
+          <PropertyRef Name="ID" />
+        </Key>
+        <Property Name="ID" Type="Edm.Int32" Nullable="false" p8:StoreGeneratedPattern="Identity" xmlns:p8="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+        <Property Name="Name" Type="Edm.String" Nullable="true" MaxLength="4000" Unicode="true" FixedLength="false" />
+      </EntityType>
+      <EntityType Name="User">
+        <Key>
+          <PropertyRef Name="ID" />
+        </Key>
+        <Property Name="ID" Type="Edm.Int32" Nullable="false" p8:StoreGeneratedPattern="Identity" xmlns:p8="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+        <Property Name="UserName" Type="Edm.String" Nullable="true" MaxLength="4000" Unicode="true" FixedLength="false" />
+        <Property Name="Name" Type="Edm.String" Nullable="true" MaxLength="4000" Unicode="true" FixedLength="false" />
+        <NavigationProperty Name="Tasks" Relationship="ODataServer.Models.User_Tasks" FromRole="User_Tasks_Source" ToRole="User_Tasks_Target" />
+      </EntityType>
+      <Association Name="Task_Priority">
+        <End Role="Task_Priority_Source" Type="ODataServer.Models.Task" Multiplicity="*" />
+        <End Role="Task_Priority_Target" Type="ODataServer.Models.TaskPriority" Multiplicity="0..1" />
+      </Association>
+      <Association Name="Task_Status">
+        <End Role="Task_Status_Source" Type="ODataServer.Models.Task" Multiplicity="*" />
+        <End Role="Task_Status_Target" Type="ODataServer.Models.TaskStatus" Multiplicity="0..1" />
+      </Association>
+      <Association Name="User_Tasks">
+        <End Role="User_Tasks_Source" Type="ODataServer.Models.User" Multiplicity="0..1" />
+        <End Role="User_Tasks_Target" Type="ODataServer.Models.Task" Multiplicity="*" />
+      </Association>
+    </Schema>
+    <Schema Namespace="System.Data.Objects" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+      <EntityContainer Name="TaskDbContext" m:IsDefaultEntityContainer="true">
+        <EntitySet Name="Tasks" EntityType="ODataServer.Models.Task" />
+        <EntitySet Name="Priorities" EntityType="ODataServer.Models.TaskPriority" />
+        <EntitySet Name="Statuses" EntityType="ODataServer.Models.TaskStatus" />
+        <EntitySet Name="Users" EntityType="ODataServer.Models.User" />
+        <AssociationSet Name="Task_Priority" Association="ODataServer.Models.Task_Priority">
+          <End Role="Task_Priority_Source" EntitySet="Tasks" />
+          <End Role="Task_Priority_Target" EntitySet="Priorities" />
+        </AssociationSet>
+        <AssociationSet Name="Task_Status" Association="ODataServer.Models.Task_Status">
+          <End Role="Task_Status_Source" EntitySet="Tasks" />
+          <End Role="Task_Status_Target" EntitySet="Statuses" />
+        </AssociationSet>
+        <AssociationSet Name="User_Tasks" Association="ODataServer.Models.User_Tasks">
+          <End Role="User_Tasks_Source" EntitySet="Users" />
+          <End Role="User_Tasks_Target" EntitySet="Tasks" />
+        </AssociationSet>
+      </EntityContainer>
+    </Schema>
+  </edmx:DataServices>
+</edmx:Edmx>
