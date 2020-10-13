@@ -1,5 +1,0 @@
-E:\Courses\OData\OData\WebODataClients\bin\WebODataClients.dll
-E:\Courses\OData\OData\WebODataClients\bin\WebODataClients.pdb
-E:\Courses\OData\OData\WebODataClients\obj\Basic\ResolveAssemblyReference.cache
-E:\Courses\OData\OData\WebODataClients\obj\Basic\WebODataClients.dll
-E:\Courses\OData\OData\WebODataClients\obj\Basic\WebODataClients.pdb
