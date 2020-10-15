@@ -1,8 +1,0 @@
-C:\VSTFS\Module 2\After\Sample.7.Rpc\Server\bin\Debug\Server.exe.config
-C:\VSTFS\Module 2\After\Sample.7.Rpc\Server\bin\Debug\Server.exe
-C:\VSTFS\Module 2\After\Sample.7.Rpc\Server\bin\Debug\Server.pdb
-C:\VSTFS\Module 2\After\Sample.7.Rpc\Server\bin\Debug\RabbitMQ.Client.dll
-C:\VSTFS\Module 2\After\Sample.7.Rpc\Server\bin\Debug\RabbitMQ.Client.xml
-C:\VSTFS\Module 2\After\Sample.7.Rpc\Server\obj\Debug\Server.csprojResolveAssemblyReference.cache
-C:\VSTFS\Module 2\After\Sample.7.Rpc\Server\obj\Debug\Server.exe
-C:\VSTFS\Module 2\After\Sample.7.Rpc\Server\obj\Debug\Server.pdb
